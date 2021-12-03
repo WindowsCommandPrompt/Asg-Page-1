@@ -1,0 +1,14 @@
+Open all javascript codes in a notepad or in a browser of your choice, DO NOT OPEN IN ANY OTHER SOFTWARE.
+
+
+
+
+
+All files found within this folder have:
+
+1) Successfully passed HTML validation and;
+2) Successfully passed CSS validation
+
+
+No need to pass JS validation since any errors detected will just straight away be raised within the console while 
+coding. 

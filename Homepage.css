@@ -1,0 +1,898 @@
+body {
+font-family: Varela Round, sans-serif;
+display: flex; 
+flex-direction: column; 
+}
+
+h2#Marker1, h2#Marker2, h2#Marker3 {
+text-decoration: underline; 
+text-align: center; 
+}
+
+ul {
+list-style-type: none; 
+}
+
+a {
+text-decoration: none; 
+color: green; 
+cursor: pointer; 
+display: block;
+}
+
+a:hover {
+color: black; 
+}
+
+a.dropdownbox:hover {
+background-color: lightblue; 
+}
+
+a.dropdownbox1:hover {
+background-color: lightblue; 
+height: 35px; 
+}
+
+header {
+display: flex; 
+height: 100px;
+flex-direction: row; 
+background-color: lightgreen; 
+justify-content: center; 
+}
+
+#SmallNavBar {
+background-color: lightgray; 
+display: flex; 
+flex-direction: row;  
+justify-content: center; 
+}
+
+img {
+width: 30px; 
+height: 30px; 
+margin-left: 5px;
+}
+
+figcaption {
+font-size: 10px; 
+}
+
+img:hover {
+cursor: pointer; 
+}
+
+.MyDiv { 
+font-size: 15px; 
+width: 150px; 
+background-color: lightgreen; 
+color: white; 
+font-weight: bold;
+transition: background-color 1s, color 1s;  
+}
+
+.MyDiv:hover{
+background-color: white;
+}
+
+main {
+background-color: white; 
+display: flex; 
+height: 530px; 
+flex-direction: row; 
+justify-content: space-between; 
+}
+
+/*aside#left {
+background-color: white; 
+flex: 0; 
+}*/
+
+
+article {
+background-color: mintcream; 
+height: 3050px; 
+margin-left: 10px; 
+flex: 5; 
+display: flex; 
+flex-direction: column; 
+}
+
+section {
+background-color: lightgray;
+display: flex; 
+flex-direction: column; 
+text-align: center;
+}
+
+footer {
+background-color: black; 
+color: white;
+text-align: center;
+}
+
+.sectionContainer1 {
+background-color: lightgray; 
+display: flex; 
+flex-direction: row; 
+align-items: flex-start; 
+}
+
+#sectionFlexItem1 {
+background-color: antiquewhite;
+height: 40px; 
+width: 100%; 
+border-style: solid; 
+border-width: 1px; 
+border-radius: 5px; 
+transition: background-color 1s, border-bottom-color 1s, border-bottom-width 1s;
+font-size: 15px; 
+}
+
+#sectionFlexItem1:hover{
+background-color: white;
+text-align: center;  
+border-bottom-color: turquoise; 
+border-bottom-width: 4px;
+}
+
+#sectionFlexItem2 {
+background-color: lightblue;
+width: 100% ;
+height: 40px;
+border-style: solid; 
+border-width: 1px; 
+border-radius: 5px;  
+font-size: 15px; 
+transition: background-color 1s,border-bottom-color 1s, border-bottom-width 1s;  
+}
+
+#sectionFlexItem2:hover {
+background-color: white; 
+text-align: center; 
+border-bottom-color: red; 
+border-bottom-width: 4px;
+}
+
+#sectionFlexItem3 {
+background-color: yellow;
+width: 100%;
+height: 40px;   
+border-style: solid; 
+border-width: 1px; 
+border-radius: 5px; 
+border-bottom-color: transparent; 
+font-size: 15px; 
+transition: background-color 1s, border-bottom-color 1s, border-bottom-width 1s; 
+}
+
+#sectionFlexItem3:hover {
+background-color: white; 
+text-align: center; 
+border-bottom-color: blue; 
+border-bottom-width: 4px; 
+}
+
+#sectionFlexItem4 {
+background-color: orange;
+width: 100%;  
+height: 40px; 
+border-style: solid; 
+border-width: 1px; 
+border-radius: 5px; 
+font-size: 15px; 
+transition: background-color 1s, border-bottom-color 1s, border-bottom-width 1s; 
+}
+
+#sectionFlexItem4:hover {
+background-color: white; 
+text-align: center; 
+border-bottom-color: aqua; 
+border-bottom-width: 4px; 
+}
+
+#sectionFlexItem5 {
+background-color: bisque;
+width: 100%;  
+height: 40px; 
+border-style: solid; 
+border-width: 1px; 
+border-radius: 5px; 
+font-size: 15px; 
+transition: background-color 1s, border-bottom-color 1s, border-bottom-width 1s; 
+}
+
+#sectionFlexItem5:hover {
+background-color: white; 
+text-align: center; 
+border-bottom-color: violet; 
+border-bottom-width: 4px; 
+}
+
+#sectionFlexItem6 {
+background-color: ghostwhite;
+width: 100%;  
+height: 40px; 
+border-style: solid; 
+border-width: 1px; 
+border-radius: 5px; 
+font-size: 15px; 
+transition: background-color 1s, border-bottom-color 1s, border-bottom-width 1s; 
+display: flex;
+flex-direction: row;
+/*Insert icons*/ 
+}
+
+#DropDownBoxAside {
+box-shadow: 1px 1px black; 
+background-color: white; 
+border-style: solid; 
+border-width: 1px; 
+border-top-width: 4px; 
+border-top-color: blue; 
+width: 300px; 
+display: none;  
+border-radius: 5px; 
+position: relative; 
+left: 200px; 
+z-index: 1; 
+}
+
+#DropDownBoxAsideHomepage {
+box-shadow: 1px 1px black; 
+border-style: solid; 
+background-color: white;
+border-width: 1px; 
+border-top-width: 4px; 
+border-top-color: orange; 
+width: 300px; 
+display: none; 
+position: relative;
+border-radius: 5px; 
+left: 200px; 
+z-index: 1; 
+}
+
+#DropDownBoxAsideLearningJourney {
+box-shadow: 1px 1px black; 
+border-style: solid; 
+background-color: white;
+border-width: 1px; 
+border-top-width: 4px; 
+border-top-color: red; 
+width: 300px; 
+display: none; 
+position: relative;
+border-radius: 5px; 
+left: 200px; 
+z-index: 1; 
+}
+
+#DropDownBoxAsidePersonalAchievements {
+box-shadow: 1px 1px black; 
+border-style: solid; 
+background-color: white;
+border-width: 1px; 
+border-top-width: 4px; 
+border-top-color: lightblue; 
+width: 300px; 
+display: none; 
+position: relative;
+border-radius: 5px; 
+left: 200px; 
+z-index: 1;
+}
+
+#MainNavBarHomepageHome, #MainNavBarHomepageAboutMe, #MainNavBarHomepageLearningJourney, #MainNavBarHomepagePersonalAchievements {
+border-style: solid; 
+border-color: black;
+background-color: white;
+border-width: 1px; 
+width: 150px; 
+display: none; 
+border-radius: 5px; 
+text-align: center; 
+}
+
+#MainNavBarOverlay, #MainNavBarOverlay1, #MainNavBarOverlay2, #MainNavBarOverlay3{
+background-color: white; 
+width: 100%; 
+display: none;
+text-align: center;
+}
+
+/*#dropdownMethod:hover #MainNavBarOverlay{
+display: block; 
+}
+*/
+
+
+#Draw:hover{
+cursor: pointer;
+}
+
+#Container {
+display: none; 
+flex-direction: column; 
+position: fixed; 
+width: 20%;
+height: 30%; 
+background-image: linear-gradient(180deg, white,navy);
+border-radius: 5px; 
+z-index: 2;
+border-style: solid;
+border-width: 1px;
+}
+
+/* DO NOT MODIFY THE BELOW CODES */ 
+
+.dropdownMethodHeaderNav {
+visibility: visible; 
+position: relative; 
+}
+
+/*HEADER*/ 
+.dropdownMethodHeaderNav:hover #MainNavBarHomepageHome {
+display: block; 
+}
+
+.dropdownMethodHeaderNav:hover #MainNavBarHomepageAboutMe {
+display: block; 
+}
+
+.dropdownMethodHeaderNav:hover #MainNavBarHomepageLearningJourney {
+display: block; 
+}
+
+.dropdownMethodHeaderNav:hover #MainNavBarHomepagePersonalAchievements {
+display: block; 
+}
+
+
+.dropdownMethod:hover #DropDownBoxAside {
+display: block; 
+}
+
+.dropdownMethod:hover #DropDownBoxAsideHomepage {
+display: block; 
+}
+
+.dropdownMethod:hover #DropDownBoxAsideLearningJourney  {
+display: block; 
+}
+
+.dropdownMethod:hover #DropDownBoxAsidePersonalAchievements{
+display: block; 
+}
+
+/*Centralising containers align stuff (OVERLAY MENU)*/
+.buttonContainer{
+display: flex;
+justify-content: center;
+flex-direction: row;
+}
+/*===================================================================*/
+
+form {
+background-color: white; 
+}
+
+input[type = email]{
+font-size: 12px; 
+width: 50%; 
+border-radius: 4px; 
+margin-bottom: 5px; 
+transition: border-color 1s, background-color 1s;
+height: 20px;
+}
+
+input[type = email]:hover {
+border-color: red; 
+background-color: yellow; 
+}
+
+input[type = tel]{
+font-size: 12px; 
+width: 50%; 
+border-radius: 4px; 
+margin-bottom: 5px; 
+transition: border-color 1s, background-color 1s;
+height: 20px;
+}
+
+input[type = tel]:hover {
+border-color: red; 
+background-color: yellow; 
+}
+
+select {
+border-radius: 2px; 
+margin-bottom: 5px; 
+width: 50%; 
+}
+
+select:hover {
+border-color: red; 
+background-color: yellow; 
+}
+
+button.menu {
+display: none; 
+}
+
+button.menu:hover {
+background-color: black;
+color: white;
+cursor: pointer; 
+}
+
+button.submit{
+border-style: solid;
+background-color: white; 
+border-radius: 4px; 
+transition: background-color 1s, color 1s;  
+}
+
+button.submit:hover {
+background-color: green; 
+color: white; 
+cursor: pointer; 
+}
+
+#reset{
+border-style: solid;
+width: 110px; 
+background-color: white; 
+border-radius: 4px; 
+transition: background-color 1s, color 1s;  
+}
+
+#reset:hover {
+background-color: red; 
+color: white; 
+cursor: pointer; 
+}
+
+#overlayMenu {
+height: 100%; 
+width: 100%; 
+background-color: black; 
+position: fixed; 
+opacity: 0.95; 
+z-index: 1; 
+display: none; 
+}
+
+/*Create a scrollable overlay menu when the phone is landscape */ 
+@media (orientation: landscape){
+#overlayMenu{
+overflow-y: scroll;
+}
+}
+
+a.overlayMenu {
+margin-top: 30px; 
+font-size: 18px; 
+text-align: center; 
+font-weight: bold; 
+}
+
+a.overlayMenu:hover {
+background-color: white; 
+}
+
+/*Create another flex container to store image*/
+
+#MainFlexContainer {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center; 
+border-style: solid;
+height: auto;
+}
+
+#TextPosition {
+display: block;   
+}
+
+#Background {
+background-image: url(https://static.wixstatic.com/media/3e6e93_33ed10a91e664c55831615e02dcb90fd~mv2.jpg);
+background-attachment: fixed;
+height: 100%;
+width: 100%; 
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#TextLabel1 {
+display: block;
+}
+
+#ImageFormattingDescription {
+width: 100%;
+height: 900px;
+}
+
+#welcomeScreen {
+width: 100%;
+height: 100%;
+background-color: navy;
+animation-name: changingColours; 
+animation-duration: 12s;
+animation-iteration-count: infinite; 
+display: flex; 
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+.text1 {
+font-size: 50px;
+color: white; 
+animation-name: hideText; 
+animation-duration: 12s; 
+animation-iteration-count: infinite; 
+}
+
+.text2 {
+font-size: 50px;
+color: black;
+animation-name: hideText1;
+animation-duration: 12s;
+animation-iteration-count: infinite; 
+}
+
+.text3 {
+font-size: 50px;
+color: white;
+animation-name: hideText2;
+animation-duration: 12s;
+animation-iteration-count: infinite; 
+}
+
+.text4 {
+font-size: 50px;
+color: black;
+animation-name: hideText3;
+animation-duration: 12s;
+animation-iteration-count: infinite; 
+}
+
+@keyframes hideText3 {
+0% {color: navy}
+25%{color: aqua}
+50%{color: indigo}
+75% {color: black}
+100% {color: navy}
+}
+
+@keyframes hideText2 {
+0% {color: navy}
+25%{color: aqua}
+50%{color: white}
+75% {color: ghostwhite}
+100% {color: navy}
+}
+
+@keyframes hideText1 {
+0% {color: navy}
+25% {color: black}
+50% {color: indigo}
+75% {color: ghostwhite}
+100% {color: navy }
+}
+
+@keyframes hideText {
+0% {color: white}
+25% {color: aqua}
+50% {color: indigo}
+75% {color: ghostwhite}
+100% {color: white}
+}
+
+@keyframes changingColours {
+0% {background-color: navy}
+25% {background-color: aqua}
+50% {background-color: indigo}
+75% {background-color: ghostwhite; }
+100% {background-color: navy;}
+}
+
+/*Add another container for 'What is this' */
+
+#WhatIsThisContainer {
+background-color: lightgray;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10%;
+border-radius: 5px;
+}
+
+#ImageContainer {
+width: 100%; 
+}
+
+#Background1 {
+display: none;
+}
+
+/*Falls under 'Contents' section within Homepage. THE MAIN FLEX CONTAINER FOR 4 IMAGES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/ 
+#ContentBox {
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap; /*default is NOWRAP!*/
+}
+
+/*Not all images require this*/ 
+.ImageFormatting {
+border-radius: 5px;
+width: 100%;
+height: auto;   
+} 
+
+/*flex containers under #ContentBox*/
+#FlexContainer, #FlexContainer1, #FlexContainer2,#FlexContainer3 {
+display: flex;
+width: 50%;
+position: relative;
+}
+
+#Interface{
+position: absolute;
+background-color: navy;
+opacity: 0;
+width: 100%;
+height: 100%;
+color: white;
+transition: opacity 1s;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+font-size: 40px;
+}
+
+#BoxedText {
+animation-delay: 5s;
+animation-name: MovingUp;
+animation-duration: 2s;
+animation-iteration-count: 1; 
+position: relative;
+}
+
+
+#Interface1 {
+position: absolute;
+background-color: indigo;
+opacity: 0;
+width: 100%;
+height: 100%;
+color: white;
+transition: opacity 1s;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+font-size: 40px;
+}
+
+#Interface2 {
+position: absolute;
+background-color: darkgreen;
+opacity: 0;
+width: 100%;
+height: 100%;
+color: white;
+transition: opacity 1s;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+font-size: 40px;
+}
+
+#Interface3 {
+position: absolute;
+background-color: darkred;
+opacity: 0;
+width: 100%;
+height: 100%;
+color: white;
+transition: opacity 1s;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+font-size: 40px;
+}
+
+#newContents {
+display: none; 
+flex-direction: column;
+height: 100%;
+width: 100%;
+background-color: indigo;
+}
+
+.buttonSelectionNewContents {
+  width: 40%; 
+  background-color: antiquewhite; 
+  border-radius: 5px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+}
+
+
+@media (max-width: 1500px){
+#Interface, #Interface1, #Interface2, #Interface3{
+font-size: 20px; 
+}
+}
+
+@media (max-width: 1100px){
+#newContents {
+display: flex;
+}
+
+#Modify {
+font-size: 30px;
+text-align: center;
+}
+
+#ContentBox {
+display: none;
+}
+} 
+
+@media (max-width: 1100px){
+#FlexContainer{
+width: 100%;
+}
+}
+/*Use javascript to control between "block" and "none" */
+
+@media (max-width: 1100px){
+#Background{
+display: none; 
+}
+
+
+@media (max-width: 400px){
+
+a.overlayMenu{
+font-size: 15px; 
+}
+
+#InterestingFactsAboutMeFacts {
+font-size: 15px; 
+height: 250px;
+}
+
+label {
+font-size: 10px;
+
+}
+
+article {
+height: 3050px;
+}
+}
+
+@media (max-width: 1100px){
+#Shift {
+margin-top: 20px;
+text-align: center; 
+}
+
+header {
+display: none; 
+}
+
+main {
+margin-top: 15px; 
+margin-left: 0px;
+}
+
+article {
+height: 4500px;
+}
+
+#flex-item {
+height: 300px;
+}
+
+aside {
+display: none; 
+}
+
+#MyDiv {
+width: 100%;
+}
+
+button.menu {
+display: block; 
+border-radius: 5px;
+background-color: lightgray; 
+transition: background-color 1s, color 1s;
+}
+
+#SmallNavBar {
+position: fixed; 
+box-shadow: 0px 2px black; 
+background-color: white; 
+justify-content: space-between; 
+width: 100%;
+} 
+
+input[type = email]{
+width: 50%;
+}
+
+img.ProfilePicture {
+width: 200px; 
+height: 200px; 
+}
+
+input[type = email], input[type=tel]{
+width: 10%; 
+font-size: 10px; 
+height: 15px; 
+}
+
+select {
+width: 10%; 
+font-size: 10px;
+height: 15px; 
+}
+
+#Container {
+width: 110px;
+}
+
+#sectionFlexItem1, #sectionFlexItem2, #sectionFlexItem3, #sectionFlexItem4, #sectionFlexItem5 {
+font-size: 12px; 
+}
+
+article {
+flex: 6;  
+height: 2000px;
+
+}
+
+input[type = email]{
+width: 30%; 
+}
+
+input[type = tel]{
+width: 30%; 
+}
+
+select {
+width: 30%; 
+}
+
+.textReduction{
+font-size: 15px;
+}
+
+#DropDownBoxAside, #DropDownBoxAsideHomepage, #DropDownBoxAsideLearningJourney, #DropDownBoxAsidePersonalAchievements  {
+left: 170px; 
+}
+
+#DropDownBoxAsidePersonalAchievements {
+bottom: 5px; 
+}
+}
+}

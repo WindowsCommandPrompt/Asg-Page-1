@@ -1,0 +1,339 @@
+<!DOCTYPE html> 
+<!--stable--> 
+<html lang = "en">
+  <head> 
+    <meta charset = "UTF-8"> 
+    <meta name="viewport" content="width=device-width">
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href = "normalise.css" rel = "stylesheet" type = "text/css">
+    <link href = "AboutMe.css" rel = "stylesheet" type = "text/css"> 
+    <title> About Me </title> 
+  </head>
+
+  <body> 
+    <header>
+      <div class = "MyDiv">
+        <a href = "https://Homepage.masterzy1234.repl.co" onclick = "return ConfirmationRedirectHomepage()"><img style = "width: 50px; height: 50px; border-radius: 50%; border-style: solid; border-width: 1px; " src = "https://static.wixstatic.com/media/3e6e93_5ecefaf8786b463792e4913c427c8f14~mv2.jpg/v1/fill/w_76,h_78,al_c,q_80,usm_0.66_1.00_0.01/website%20profile%20image.webp" alt = "Button to return to homepage"></a>
+      </div> 
+      <div class = "MyDiv"> 
+        <div class = "dropdownMethodHeaderNav">  
+          <p style = "text-align: center"><a href = "https://Homepage.masterzy1234.repl.co" class = "dropdownbox1" onclick = "return ConfirmationRedirectHomepage()"> Home </a></p>
+            <div id = "MainNavBarHomepageHome">
+              <br> 
+              <a href = "https://Homepage.masterzy1234.repl.co#Marker1" class = "dropdownbox" onclick = "return ConfirmationRedirectHomepage()">What's this? </a> 
+              <br> 
+              <a href = "https://Homepage.masterzy1234.repl.co#Marker2" class = "dropdownbox" onclick = "return ConfirmationRedirectHomepage()">Contents</a>
+              <br> 
+            </div> 
+        </div>
+      </div>
+      <div class = "MyDiv">
+        <div class = "dropdownMethodHeaderNav">
+          <p style = "text-align: center"><a href = "https://About-Me-Page.masterzy1234.repl.co#Marker2" class = "dropdownbox1" onclick = "return ConfirmationRedirectAboutMe()"> About Me</a></p> 
+          <div id = "MainNavBarHomepageAboutMe">
+            <br> 
+            <a href = "https://About-Me-Page.masterzy1234.repl.co#Marker3" class = "dropdownbox" onclick = "return ConfirmationRedirectAboutMe()">My Vision</a> 
+            <br> 
+            <a href = "https://About-Me-Page.masterzy1234.repl.co#Marker3" class = "dropdownbox" onclick = "return ConfirmationRedirectAboutMe()">Interesting facts about me</a> 
+            <br>
+          </div> 
+        </div>
+      </div> 
+      <div class = "MyDiv">
+        <div class = "dropdownMethodHeaderNav">
+          <p style = "text-align: center"><a href = "https://My-Learning-Journey-page.masterzy1234.repl.co" onclick = "return ConfirmationRedirectLearningJourney()" class = "dropdownbox1"> Learning Journey</a></p> 
+          <div id = "MainNavBarHomepageLearningJourney">
+            <br> 
+            <a href = "https://My-Learning-Journey-page.masterzy1234.repl.co#Marker1" class = "dropdownbox" onclick = "return ConfirmationRedirectLearningJourney()">Primary School</a> 
+            <br>
+            <a href = "https://My-Learning-Journey-page.masterzy1234.repl.co#Marker2" class = "dropdownbox" onclick = "return ConfirmationRedirectLearningJourney()">Secondary School</a> 
+            <br> 
+            <a href = "https://My-Learning-Journey-page.masterzy1234.repl.co#Marker3" class = "dropdownbox" onclick = "return ConfirmationRedirectLearningJourney()">Tertiary</a> 
+            <br> 
+          </div> 
+        </div> 
+      </div> 
+      <div class = "MyDiv"> 
+        <div class = "dropdownMethodHeaderNav">
+          <p style = "text-align: center"><a href = "https://Personal-Achievements-page.masterzy1234.repl.co" class = "dropdownbox1" onclick = "return ConfirmationRedirectPersonalAchievements()"> Personal achievements</a></p>
+          <div id = "MainNavBarHomepagePersonalAchievements">
+            <br> 
+            <a href = "https://Personal-Achievements-page.masterzy1234.repl.co#Marker1" class = "dropdownbox" onclick = "return ConfirmationRedirectPersonalAchievements()">Primary School Achievements</a> 
+            <br>
+            <a href = "https://Personal-Achievements-page.masterzy1234.repl.co#Marker2" class = "dropdownbox" onclick = "return ConfirmationRedirectPersonalAchievements()">Secondary School Achievements</a> 
+            <br> 
+          </div>  
+        </div> 
+      </div> 
+      <div class = "MyDiv"> 
+        <p style = "text-align: center"><a href = "https://Personal-Projects-page.masterzy1234.repl.co" class = "dropdownbox1" onclick = "return ConfirmationRedirectPersonalProjects()"> Personal Projects</a></p>
+      </div> 
+    </header> 
+    <div id = "SmallNavBar">
+        <button class = "menu" type = "button" onclick  = "openNav(), Control()">MENU</button> 
+        <div id = "overlayMenu"> 
+          <button type = "button" onclick = "closeNav()" style = "width: 100%; height: 38px; border-radius: 5px;cursor: pointer;">CLOSE OVERLAY MENU</button> 
+          <!--<div id = "dropdownMethod">--> 
+            <a href = "https://Homepage.masterzy1234.repl.co" class = "overlayMenu" onclick = "return ConfirmationRedirectHomepage(); closeNav();"> Homepage </a> 
+            <div class = "buttonContainer">
+              <button id = "deploy" style = "cursor: pointer"> expand </button>
+            </div> 
+            <!--Upon clicking on the button, MainNavBarOverlay will display-->   
+            <div id = "MainNavBarOverlay"> 
+              <br> 
+              <a href = "https://Homepage.masterzy1234.repl.co#Marker1" class = "dropdownbox" onclick = "return ConfirmationRedirectHomepage(); closeNav();">What's this? </a> 
+              <br> 
+              <a href = "https://Homepage.masterzy1234.repl.co#Marker2" class = "dropdownbox" onclick = "return ConfirmationRedirectHomepage(); closeNav(); ">Contents</a>
+              <br> 
+            </div>  
+          <!--</div>-->
+          <!--<div id = "dropdownMethod"> -->
+            <a href = "https://About-Me-Page.masterzy1234.repl.co" class = "overlayMenu" onclick = "return ConfirmationRedirectAboutMe(); closeNav(); "> About Me </a> 
+            <div class = "buttonContainer"> 
+              <button id = "deploy1" style = "cursor: pointer"> expand </button>
+              <!--Upon clicking on the button, MainNavBarOverlay will display--> 
+            </div> 
+            <div id = "MainNavBarOverlay1">
+              <br>
+              <a href = "https://About-Me-Page.masterzy1234.repl.co#Marker2" class = "dropdownbox" onclick = "return ConfirmationRedirectAboutMe(); closeNav(); ">My Vision</a> 
+              <br> 
+              <a href = "https://About-Me-Page.masterzy1234.repl.co#Marker3" class = "dropdownbox" onclick = "return ConfirmationRedirectAboutMe(); closeNav(); ">Interesting Facts About Me</a> 
+              <br> 
+            </div>
+          <!--</div> -->
+          <!--<div id = "dropdownMethod">--> 
+            <a href = "https://My-Learning-Journey-page.masterzy1234.repl.co" class = "overlayMenu" onclick = "return ConfirmationRedirectLearningJourney(); closeNav();"> Learning Journey </a> 
+            <div class = "buttonContainer">
+              <button id = "deploy2" style = "cursor: pointer"> expand </button>
+            </div>
+            <!--Upon clicking on the button, MainNavBarOverlay will display-->  
+            <div id = "MainNavBarOverlay2"> 
+              <br>
+              <a href = "https://My-Learning-Journey-page.masterzy1234.repl.co#Marker1" class = "dropdownbox" onclick = "return ConfirmationRedirectAboutMe(); closeNav(); ">Primary School</a> 
+              <br> 
+              <a href = "https://My-Learning-Journey-page.masterzy1234.repl.co#Marker2" class = "dropdownbox" onclick = "return ConfirmationRedirectAboutMe(); closeNav(); ">Secondary School</a> 
+              <br> 
+              <a href = "https://My-Learning-Journey-page.masterzy1234.repl.co#Marker3" class = "dropdownbox" onclick = "return ConfirmationRedirectAboutMe(); closeNav()">Tertiary</a>
+              <br> 
+            </div>
+          <!--</div>--> 
+          <!--<div id = "dropdownMethod">--> 
+            <a href = "https://Personal-Achievements-page.masterzy1234.repl.co" class = "overlayMenu" onclick = "return ConfirmationRedirectPersonalAchievements(); closeNav;"> Personal Achievements </a> 
+            <div class = "buttonContainer">
+              <button id = "deploy3" style = "cursor: pointer"> expand </button>
+            </div>
+            <!--Upon clicking on the button, MainNavBarOverlay will display-->  
+            <div id = "MainNavBarOverlay3">
+              <br>
+              <a href = "https://Personal-Achievements-page.masterzy1234.repl.co#Marker1" class = "dropdownbox" onclick = "return ConfirmationRedirectPersonalAchievements(); closeNav(); ">Primary School Achievements</a> 
+              <br> 
+              <a href = "https://Personal-Achievements-page.masterzy1234.repl.co#Marker2" class = "dropdownbox" onclick = "return ConfirmationRedirectPersonalAchievements(); closeNav(); ">Secondary School Achievements</a> 
+              <br>
+            </div>
+          <!--</div>-->
+          <a href = "https://Personal-Projects-page.masterzy1234.repl.co" class = "overlayMenu" onclick = "return ConfirmationRedirectPersonalProjects()"> Personal Projects </a>
+        </div>        
+    <!--To make the image a hyperlink, make sure that <img> is BETWEEN <a> and </a>, if not the hyperlink WILL NOT WORK -->
+    <a href = "https://Contact-Card.masterzy1234.repl.co#LinkedIn" onclick = "return ConfirmationRedirectLinkedInProfile()"><img src = "https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png" alt = "LinkedIn Profile"></a> 
+    <a href = "https://Contact-Card.masterzy1234.repl.co#IG" onclick = "return ConfirmationRedirectIGProfile()"><img src = "https://cdn.icon-icons.com/icons2/2428/PNG/512/instagram_black_logo_icon_147122.png" alt = "IG Profile"></a> 
+    <a href = "https://Contact-Card.masterzy1234.repl.co" onclick = "return ConfirmationRedirectContactPage()"><img src = "https://cdn.icon-icons.com/icons2/2428/PNG/512/whatsapp_black_logo_icon_147050.png" alt = "WA"></a>
+    </div> 
+    <div id = "Shift"> 
+      <h1>About Me</h1>
+    </div>
+    <main> 
+      <aside>
+        <button id = "Draw" style = "position: fixed; font-size: 15px; opacity: 0.75" >Nav</button>  
+        <div id = "Container"> 
+          <h2 style = "text-align: center">About Me</h2>
+          <div class = "dropdownMethod"> 
+            <div id = "sectionFlexItem1"><a href = "https://Homepage.masterzy1234.repl.co" class = "dropdownbox" onclick = "return ConfirmationRedirectHomepage()">Homepage</a>
+              <div id = "DropDownBoxAsideHomepage"> 
+                <p> -Home page- </p>
+                <br>
+                <a href = "https://Homepage.masterzy1234.repl.co#Marker1" class = "dropdownbox" onclick = "return ConfirmationRedirectHomepage()">What's this? </a> 
+                <br>
+                <a href = "https://Homepage.masterzy1234.repl.co#Marker2" class = "dropdownbox" onclick = "return ConfirmationRedirectHomepage()">Contents</a> 
+                <br> 
+              </div> 
+            </div>
+          </div>
+          <div class = "dropdownMethod"> 
+            <div id = "sectionFlexItem2"><a href = "https://About-Me-Page.masterzy1234.repl.co" onclick = "return ConfirmationRedirectAboutMe()" class = "dropdownbox">About Me</a>
+              <div id = "DropDownBoxAside"> 
+                <p> -About Me Page- </p>
+                <br>
+                <a href = "https://About-Me-Page.masterzy1234.repl.co#Marker2" class = "dropdownbox" onclick = "return ConfirmationRedirectAboutMe()">My Vision</a> 
+                <br>
+                <a href = "https://About-Me-Page.masterzy1234.repl.co#Marker3" class = "dropdownbox" onclick = "return ConfirmationRedirectAboutMe()">Interesting facts about me</a> 
+                <br>  
+              </div> 
+            </div> 
+          </div> 
+          <div class = "dropdownMethod">
+            <div id = "sectionFlexItem3"><a href = "https://My-Learning-Journey-page.masterzy1234.repl.co" onclick = "return ConfirmationRedirectLearningJourney()" class = "dropdownbox">Learning Journey </a>
+              <div id = "DropDownBoxAsideLearningJourney"> 
+                <p> -My Learning Journey Page-</p> 
+                <br> 
+                <a href = "https://My-Learning-Journey-page.masterzy1234.repl.co#Marker1" class = "dropdownbox" onclick = "return ConfirmationRedirectLearningJourney()"> Primary School </a> 
+                <br> 
+                <a href = "https://My-Learning-Journey-page.masterzy1234.repl.co#Marker2" class = "dropdownbox" onclick = "return ConfirmationRedirectLearningJourney()"> Secondary School </a> 
+                <br> 
+                <a href = "https://My-Learning-Journey-page.masterzy1234.repl.co#Marker3" class = "dropdownbox" onclick = "return ConfirmationRedirectLearningJourney()">Tertiary</a> 
+                <br> 
+              </div> 
+            </div> 
+          </div>
+          <div class = "dropdownMethod"> 
+            <div id = "sectionFlexItem4"><a href = "https://Personal-Achievements-page.masterzy1234.repl.co" class = "dropdownbox" onclick = "return ConfirmationRedirectPersonalAchievements()">Personal Achievements</a>
+              <div id = "DropDownBoxAsidePersonalAchievements">
+                <p> -Personal Achievements page-</p> 
+                <br>
+                <a href = "https://Personal-Achievements-page.masterzy1234.repl.co#Marker1" class = "dropdownbox" onclick = "return ConfirmationRedirectPersonalAchievements()">Primary School Achievements </a> 
+                <br>
+                <a href = "https://Personal-Achievements-page.masterzy1234.repl.co#Marker2" class = "dropdownbox" onclick = "return ConfirmationRedirectPersonalAchievements()">Secondary School Achievements</a>
+                <br>
+              </div>  
+            </div>
+          </div> 
+          <div id = "dropdownMethod"> 
+            <div id = "sectionFlexItem5">
+              <a href = "https://Personal-Projects-page.masterzy1234.repl.co" class = "dropdownbox" onclick = "return ConfirmationRedirectPersonalProjects()">Personal Projects</a>
+            </div>
+          </div>
+          <div id = "sectionFlexItem6"> 
+            <a href = "https://Contact-Card.masterzy1234.repl.co#LinkedIn" onclick = "return ConfirmationRedirectLinkedInProfile()"><img src = "https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png" alt = "LinkedIn Profile"></a> 
+            <a href = "https://Contact-Card.masterzy1234.repl.co#IG" onclick = "return ConfirmationRedirectIGProfile()"><img src = "https://cdn.icon-icons.com/icons2/2428/PNG/512/instagram_black_logo_icon_147122.png" alt = "IG Profile"></a> 
+            <a href = "https://Contact-Card.masterzy1234.repl.co" onclick = "return ConfirmationRedirectContactPage()"><img src = "https://cdn.icon-icons.com/icons2/2428/PNG/512/whatsapp_black_logo_icon_147050.png" alt = "WA"></a>
+          </div>
+        </div> 
+      </aside> 
+      <article> 
+        <h2 id = "Marker1"> About Me </h2> 
+        <figure style = "text-align: center">  
+          <img src = "https://static.wixstatic.com/media/3e6e93_e85715eb60b84428936f8880da2f2e61~mv2.jpg/v1/fill/w_490,h_400,al_c,lg_1,q_80/3e6e93_e85715eb60b84428936f8880da2f2e61~mv2.webp" alt = "My profile picture" class = "ProfilePicture"> 
+          <figcaption> My Profile Picture </figcaption> 
+        </figure>
+        <div id = "AboutMeMainContainer">
+          <!--First flex container--> 
+          <div id = "AboutMe1">
+            <div class = "AboutMeInnerText">
+              <h2> Who am I? </h2> 
+            </div> 
+            <div class = "AboutMeInnerContainer">
+              <div id = "Entry">
+                Li Zhe Yun
+              </div> 
+            </div> 
+          </div>
+          <!--Second flex container--> 
+          <div id = "AboutMe2">
+            <div class = "AboutMeInnerText">
+              <h2> Where am I? </h2>
+            </div> 
+            <div class = "AboutMeInnerContainer">
+              Year 1 Student studying the Information Technology (IT) course at NP.
+            </div>
+          </div> 
+          <!--Third flex container--> 
+          <div id = "AboutMe3">
+            <div class = "AboutMeInnerText"> 
+              <h2> What did my course teach me? 
+              </h2> 
+            </div> 
+            <div class = "AboutMeInnerContainer">
+              Interested in developing things such as applications, webpages. Not just developing applications and webpages, but also maintaining them to ensure that their performance still remains the same.
+            </div>
+          </div> 
+          <!--Fourth flex container-->  
+          <div id = "AboutMe4">
+            <div class = "AboutMeInnerText"> 
+              <h2> How does my course help me in the future?</h2> 
+            </div> 
+            <div class = "AboutMeInnerContainer">
+              Interested in how we can use the programming languages available to develop useful applications or software that could serve useful purposes such as increasing people's productivity.
+            </div>
+          </div> 
+        </div>
+        <br> 
+        <br>  
+        <h2 id = "Marker2">My Vision</h2>
+        <div id = "MyVisionFlexContainer"> 
+          <img src = "https://static.wixstatic.com/media/3e6e93_a4c8ff796e5f49bfa6ca5d59d61481bf~mv2.jpg/v1/fill/w_674,h_550,al_c,q_85,usm_0.66_1.00_0.01/3e6e93_a4c8ff796e5f49bfa6ca5d59d61481bf~mv2.webp" id = "imageFormat" style = "cursor: default; border-radius: 5px; " alt = "Some futuristic looking image">
+        </div>
+        <div id = "MyVisionText">Vision: To be someone who is innovative, respectful, non-judgemental and is well-known and looked up to by everyone in our society.
+        </div>  
+        <br>
+        <br>
+        <h2 id = "Marker3">Interesting facts about me</h2> 
+        <div id = "InterestingFactsAboutMeFlexContainer">
+          <img src = "https://static.wixstatic.com/media/3e6e93_c167d5a5a5334d5fb59a6deb47130d7a~mv2.jpeg/v1/fill/w_409,h_218,al_c,q_80,usm_0.66_1.00_0.01/idk%20haha.webp" class = "InterestingFactsAboutMe" alt = "Astronomy" style = "height: auto; margin: 0 auto; cursor:default"> 
+          <div class = "InterestingFactsAboutMeFacts">
+            <h3>1. I am really interested in Astronomy, if you didn't know. </h3>
+            <p> Especially in the areas of how our universe has evolved over a very long period of time, the relationship between planets, stars and galaxies, and how they interact with each other. Sounds interesting, isn't it?  Don't be surprised if you find me calculating a lot during classes, cuz most likely I will be calculating the next occurrences of our galaxy colliding with our neighbouring galaxy. </p> 
+          </div> 
+          <img src = "https://static.wixstatic.com/media/3e6e93_2b7a94bf1c654895abe60c30c530ee14~mv2.jpg/v1/fill/w_360,h_200,al_c,q_80/some%20quantum%20mechanics%20shit.webp" class = "InterestingFactsAboutMe" alt = "Quantum Mechanics" style = "height: auto; cursor: default; margin: 0 auto" >
+          <div class = "InterestingFactsAboutMeFacts">
+            <h3>2. I am really interested in Quantum Mechanics </h3>
+            <p> Quantum Mechanics and classical physics are two different things. Yes. It's totally different! Quantum mechanics that we all know today are mostly focuses on the nature of how atoms and sub-atomic particles work(microscopic level haha), whereas classical physics that most of us learnt mostly focuses on the interactions between us and the natural world, on a "visible scale". </p> 
+          </div>  
+        </div> 
+        <section> 
+      <!--Insert another flex container here --> 
+        <form action = "welcome.php" method = "POST">
+          <h3> Stay Connected With Me Today! </h3> 
+          <label>Your Email Address: </label> 
+          <input type = "email" placeholder = "Please enter your email here" required = "required" name = "EmailAddr">
+          <br> 
+          <br> 
+          <label>Your Country Code: </label>
+          <select name = "Country Code">  
+            <option> +1 </option> 
+            <option> +27 </option> 
+            <option> +44 </option> 
+            <option> +60 </option> 
+            <option> +62 </option> 
+            <option> +65 </option> 
+            <option> +66 </option> 
+            <option> +86 </option> 
+            <option> +852 </option> 
+            <option> +853 </option> 
+          </select> 
+          <br>
+          <br>  
+          <label>Your local telephone number: </label> 
+          <input type = "tel" placeholder = "Your full telephone number here" required = "required" name = "TelNo"> 
+          <br> 
+          <button class = "submit"  type = "submit" onclick = "return ConfirmationSubmit()">Submit Now!</button> 
+          <button id = "reset" type = "reset" onclick = "return ConfirmationReset()">Reset</button>
+          <br> 
+          <hr>
+          <h3 class = "textReduction"> Or you can connect with me using one of the following methods: </h3> 
+          <div style = "display: flex; flex-direction: row; justify-content: center;"> 
+            <a href = "https://Contact-Card.masterzy1234.repl.co#LinkedIn" onclick = "return ConfirmationRedirectLinkedInProfile()"><img src = "https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png" alt = "LinkedIn Profile"></a>
+            <a href = "https://Contact-Card.masterzy1234.repl.co#IG" onclick = "return ConfirmationRedirectIGProfile()"><img src = "https://cdn.icon-icons.com/icons2/2428/PNG/512/instagram_black_logo_icon_147122.png" alt = "IG Profile"></a>
+            <a href = "https://Contact-Card.masterzy1234.repl.co" onclick = "return ConfirmationRedirectContactPage()"><img src = "https://cdn.icon-icons.com/icons2/2428/PNG/512/whatsapp_black_logo_icon_147050.png" alt = "WA"></a> 
+          </div>
+        </form> 
+        CSS VALIDATION 
+        <p>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!" />
+            </a>
+        </p>
+      </section>  
+      <footer> 
+        <p> 2021 All rights reserved </p>
+        <p> v.1.7 </p>  
+      </footer> 
+      </article> 
+    </main>
+    
+  <script src = "AboutMePage.js"></script>
+  <noscript>This webpage cannot be displayed. Please upgrade to the latest version of your browser.</noscript>
+  </body>
+  
+</html> 
+<!--END--> 

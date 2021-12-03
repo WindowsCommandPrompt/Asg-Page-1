@@ -1,0 +1,818 @@
+body {
+font-family: Varela Round, sans-serif;
+display: flex; 
+flex-direction: column; 
+overflow-x: hidden; 
+}
+
+h2#Marker1, h2#Marker2, h2#Marker3 {
+text-decoration: underline; 
+text-align: center; 
+}
+
+ul {
+list-style-type: none; 
+}
+
+a {
+text-decoration: none; 
+color: green; 
+cursor: pointer; 
+display: block;
+}
+
+a:hover {
+color: black; 
+}
+
+a.dropdownbox:hover {
+background-color: lightblue; 
+}
+
+a.dropdownbox1:hover {
+background-color: lightblue; 
+height: 35px; 
+}
+
+header {
+display: flex; 
+flex-direction: row; 
+background-color: lightgreen; 
+justify-content: center; 
+height: 100px; 
+}
+
+#SmallNavBar {
+background-color: lightgray; 
+display: flex; 
+flex-direction: row;  
+justify-content: center; 
+}
+
+img {
+width: 30px; 
+height: 30px; 
+margin-left: 5px;
+}
+
+figcaption {
+font-size: 10px; 
+}
+
+img:hover {
+cursor: pointer; 
+}
+
+.MyDiv { 
+font-size: 15px; 
+width: 150px; 
+background-color: lightgreen; 
+color: white; 
+font-weight: bold;
+transition: background-color 1s, color 1s;  
+}
+
+.MyDiv:hover{
+background-color: white;
+}
+
+main {
+background-color: white; 
+display: flex; 
+height: 530px; 
+flex-direction: row; 
+justify-content: space-between; 
+}
+
+/*aside#left {
+flex: 0; 
+}
+*/
+
+#Container {
+display: none; 
+flex-direction: column; 
+position: fixed; 
+width: 20%; 
+height: 30%;
+border-style: solid;
+border-width: 1px;
+border-radius: 5px; 
+background-image: linear-gradient(180deg, white, navy, white)
+}
+
+article { 
+height: 2050px; 
+margin-left: 10px; 
+flex: 5; 
+display: flex; 
+flex-direction: column; 
+}
+
+section {
+margin-top: auto;
+background-color: lightgray; 
+display: flex; 
+flex-direction: column;
+text-align: center; 
+}
+
+.sectionContainer1 {
+background-color: lightgray; 
+display: flex; 
+flex-direction: row; 
+align-items: flex-start; 
+}
+
+#sectionFlexItem1 {
+background-color: antiquewhite;
+height: 40px; 
+width: 100%; 
+border-style: solid; 
+border-width: 1px; 
+border-radius: 5px; 
+transition: background-color 1s, border-bottom-color 1s, border-bottom-width 1s;
+font-size: 15px; 
+}
+
+#sectionFlexItem1:hover{
+background-color: white;
+text-align: center;  
+border-bottom-color: turquoise; 
+border-bottom-width: 4px;
+}
+
+#sectionFlexItem2 {
+background-color: lightblue;
+width: 100% ;
+height: 40px;
+border-style: solid; 
+border-width: 1px; 
+border-radius: 5px;  
+font-size: 15px; 
+transition: background-color 1s,border-bottom-color 1s, border-bottom-width 1s;  
+}
+
+#sectionFlexItem2:hover {
+background-color: white; 
+text-align: center; 
+border-bottom-color: red; 
+border-bottom-width: 4px;
+}
+
+#sectionFlexItem3 {
+background-color: yellow;
+width: 100%;
+height: 40px;   
+border-style: solid; 
+border-width: 1px; 
+border-radius: 5px; 
+border-bottom-color: transparent; 
+font-size: 15px; 
+transition: background-color 1s, border-bottom-color 1s, border-bottom-width 1s; 
+}
+
+#sectionFlexItem3:hover {
+background-color: white; 
+text-align: center; 
+border-bottom-color: blue; 
+border-bottom-width: 4px; 
+}
+
+#sectionFlexItem4 {
+background-color: orange;
+width: 100%;  
+height: 40px; 
+border-style: solid; 
+border-width: 1px; 
+border-radius: 5px; 
+font-size: 15px; 
+transition: background-color 1s, border-bottom-color 1s, border-bottom-width 1s; 
+}
+
+#sectionFlexItem4:hover {
+background-color: white; 
+text-align: center; 
+border-bottom-color: aqua; 
+border-bottom-width: 4px; 
+}
+
+#sectionFlexItem5 {
+background-color: bisque;
+width: 100%;  
+height: 40px; 
+border-style: solid; 
+border-width: 1px; 
+border-radius: 5px; 
+font-size: 15px; 
+transition: background-color 1s, border-bottom-color 1s, border-bottom-width 1s; 
+}
+
+#sectionFlexItem5:hover {
+background-color: white; 
+text-align: center; 
+border-bottom-color: violet; 
+border-bottom-width: 4px; 
+}
+
+#sectionFlexItem6 {
+background-color: ghostwhite;
+width: 100%;  
+height: 40px; 
+border-style: solid; 
+border-width: 1px; 
+border-radius: 5px; 
+font-size: 15px; 
+transition: background-color 1s, border-bottom-color 1s, border-bottom-width 1s; 
+display: flex;
+flex-direction: row;
+/*Insert icons*/ 
+}
+
+#DropDownBoxAside {
+box-shadow: 1px 1px black; 
+background-color: white; 
+border-style: solid; 
+border-width: 1px; 
+border-top-width: 4px; 
+border-top-color: blue; 
+width: 300px; 
+display: none;  
+border-radius: 5px; 
+position: relative; 
+left: 200px; 
+z-index: 1; 
+}
+
+#DropDownBoxAsideHomepage {
+box-shadow: 1px 1px black; 
+border-style: solid; 
+background-color: white;
+border-width: 1px; 
+border-top-width: 4px; 
+border-top-color: orange; 
+width: 300px; 
+display: none; 
+position: relative;
+border-radius: 5px; 
+left: 200px; 
+z-index: 1; 
+}
+
+#DropDownBoxAsideLearningJourney {
+box-shadow: 1px 1px black; 
+border-style: solid; 
+background-color: white;
+border-width: 1px; 
+border-top-width: 4px; 
+border-top-color: red; 
+width: 300px; 
+display: none; 
+position: relative;
+border-radius: 5px; 
+left: 200px; 
+z-index: 1; 
+}
+
+#DropDownBoxAsidePersonalAchievements {
+box-shadow: 1px 1px black; 
+border-style: solid; 
+background-color: white;
+border-width: 1px; 
+border-top-width: 4px; 
+border-top-color: lightblue; 
+width: 300px; 
+display: none; 
+position: relative;
+border-radius: 5px; 
+left: 200px; 
+z-index: 1;
+}
+
+#MainNavBarHomepageHome, #MainNavBarHomepageAboutMe, #MainNavBarHomepageLearningJourney, #MainNavBarHomepagePersonalAchievements {
+border-style: solid; 
+background-color: white;
+border-width: 1px; 
+width: 150px; 
+display: none; 
+border-radius: 5px; 
+border-color: black;
+text-align: center; 
+}
+
+#MainNavBarOverlay, #MainNavBarOverlay1, #MainNavBarOverlay2, #MainNavBarOverlay3{
+background-color: white; 
+width: 100%; 
+display: none; 
+text-align: center;
+}
+
+/*#dropdownMethod:hover #MainNavBarOverlay{
+display: block; 
+}
+*/
+
+.dropdownMethodHeaderNav {
+display: block; 
+position: relative; 
+}
+
+/* HEADER DROPDOWN MENU */
+.dropdownMethodHeaderNav:hover #MainNavBarHomepageHome {
+display: block; 
+}
+
+.dropdownMethodHeaderNav:hover #MainNavBarHomepageAboutMe {
+display: block; 
+}
+
+.dropdownMethodHeaderNav:hover #MainNavBarHomepageLearningJourney {
+display: block; 
+}
+
+.dropdownMethodHeaderNav:hover #MainNavBarHomepagePersonalAchievements {
+display: block; 
+}
+
+
+/*ASIDE DROPDOWN MENU*/ 
+.dropdownMethod:hover #DropDownBoxAside {
+display: block; 
+}
+
+.dropdownMethod:hover #DropDownBoxAsideHomepage {
+display: block; 
+}
+
+.dropdownMethod:hover #DropDownBoxAsideLearningJourney  {
+display: block; 
+}
+
+.dropdownMethod:hover #DropDownBoxAsidePersonalAchievements{
+display: block; 
+}
+
+/*Centralising containers align stuff (OVERLAY MENU)*/
+.buttonContainer{
+display: flex;
+justify-content: center;
+flex-direction: row;
+}
+/*===================================================================*/
+
+footer { 
+background-color: black; 
+color: white; 
+text-align: center;
+}
+
+form {
+background-color: white; 
+}
+
+input[type = email]{
+font-size: 12px; 
+width: 50%; 
+border-radius: 4px; 
+margin-bottom: 5px; 
+transition: border-color 1s, background-color 1s;
+height: 20px;
+}
+
+input[type = email]:hover {
+border-color: red; 
+background-color: yellow; 
+}
+
+input[type = tel]{
+font-size: 12px; 
+width: 50%; 
+border-radius: 4px; 
+margin-bottom: 5px; 
+transition: border-color 1s, background-color 1s;
+height: 20px;
+}
+
+input[type = tel]:hover {
+border-color: red; 
+background-color: yellow; 
+}
+
+select {
+border-radius: 2px; 
+margin-bottom: 5px; 
+width: 50%; 
+}
+
+select:hover {
+border-color: red; 
+background-color: yellow; 
+}
+
+button.menu {
+display: none; 
+}
+
+button.menu:hover {
+background-color: black;
+color: white;
+cursor: pointer; 
+}
+
+button.submit{
+border-style: solid;
+background-color: white; 
+border-radius: 4px; 
+transition: background-color 1s, color 1s;  
+}
+
+button.submit:hover {
+background-color: green; 
+color: white; 
+cursor: pointer; 
+}
+
+#reset{
+border-style: solid;
+width: 110px; 
+background-color: white; 
+border-radius: 4px; 
+transition: background-color 1s, color 1s;  
+}
+
+#reset:hover {
+background-color: red; 
+color: white; 
+cursor: pointer; 
+}
+
+#overlayMenu {
+height: 100%; 
+width: 100%; 
+background-color: black; 
+position: fixed; 
+opacity: 0.95; 
+z-index: 1; 
+display: none; 
+}
+
+/*Create a scrollable overlay menu when the phone is landscape */ 
+@media (orientation: landscape){
+#overlayMenu{
+  overflow-y: scroll;
+}
+}
+
+a.overlayMenu {
+margin-top: 30px; 
+font-size: 18px; 
+text-align: center; 
+font-weight: bold; 
+}
+
+a.overlayMenu:hover {
+background-color: white; 
+}
+
+/*Main flex container for the image and the text*/ 
+
+/*Main flex container for the images included (all 3 images share one) */ 
+
+.FlexContainerForImage {
+display: flex; 
+flex-direction: row;
+border-style: solid;
+border-width: 1px;
+width: 100%; 
+background-color: mintcream;
+}
+
+/*All 3 images will share the same image container */ 
+
+.ImageContainer {
+display: flex; 
+width: 50%; 
+}
+
+/* TextContainerMain is a flex container that is responsible for containing the year and the Year, Institution Name and a little description about my Primary School back then  */ 
+
+.TextContainerMain {
+display: flex;
+flex-direction: column;
+width: 50%; 
+}
+
+.TextContainer {
+width: 100%; 
+}
+
+.Base {
+background-image: linear-gradient(red, violet);
+padding: 3px;
+}
+
+.Top {
+background-color: white; 
+padding: 3px;
+text-align: center;
+}
+
+.BaseInstitutionName {
+background-image: linear-gradient(red, rgb(130, 238, 211));
+padding: 3px; 
+}
+
+.TopDescription {
+background-color: white; 
+padding: 3px;
+text-align: center;
+}
+
+.BaseDescription {
+background-image: linear-gradient(red, rgba(191, 238, 130, 0.685));
+padding: 3px; 
+}
+
+.TopInstitutionName {
+background-color: white; 
+padding: 3px;
+text-align: center;
+}
+
+
+.ImageFormatting{
+height: 100%;
+width: 100%;
+margin: auto; 
+}
+
+button#enlarge, #enlarge1, #enlarge2 {
+background-color: green; color: white; 
+width: 100%; 
+border-style: none;
+border-radius: 5px;
+margin-top: 20px;
+height: 50px;
+font-size: 20px;
+} 
+
+#enlarge:hover {
+background-color: darkgreen;
+cursor: pointer; 
+} 
+
+#enlarge1:hover{
+background-color: darkgreen;
+cursor: pointer; 
+} 
+
+#enlarge2:hover {
+background-color: darkgreen;
+cursor: pointer;       
+}
+
+#ShowImage, #ShowImage1, #ShowImage2 {
+background-color: black;
+padding: 10px; 
+height: 100%; 
+width: 100%; 
+display: none;
+color: white;
+position: fixed; 
+/*Hide container unless 'enlarge image' button has been clicked. */ 
+overflow-y: scroll;
+}
+
+#closeImage, #closeImage1, #closeImage2 {
+position: fixed;  
+}
+
+.closeImageStyling {
+background-color: white;
+color: black;
+transition: background-color 1s, color 1s;
+border-radius: 5px;
+border-width: 1px;
+}
+
+.closeImageStyling:hover {
+background-color: red;
+color: white; 
+cursor: pointer;
+}
+
+textarea {
+width: 60%;
+height: auto;
+}
+
+.SumUpBox {
+background-color: lightgray;
+}
+
+#Status, #Status1, #Status2, #Status3{
+  display: none;
+  text-align: center;
+  font-size: 25px;
+  color: red; 
+}
+
+.centralise {
+  text-align: center;
+}
+
+@media (max-width: 400px){
+
+textarea {
+  width: 40%;
+  font-size: 10px;
+}
+
+a.overlayMenu{
+  font-size: 15px; 
+}
+
+#InterestingFactsAboutMeFacts {
+  font-size: 15px; 
+  height: 250px;
+}
+
+label {
+  font-size: 10px;
+
+}
+
+article {
+  height: 1550px;
+}
+
+section {
+  margin-top: 0px;
+}
+}
+
+/*Screen width larger than tablet computers*/ 
+@media (max-width: 1100px){
+#Status, #Status1, #Status2, #Status3{
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  color: red; 
+}
+
+.centralise {
+  font-size: 15px;
+}
+
+.resize {
+font-size: 15px;
+}
+
+.SumUpBox {
+  font-size: 10px;
+}
+
+.FlexContainerForImage {
+  flex-direction: column; 
+}
+
+.ImageContainer {
+  width: 100%; 
+}
+
+#Shift {
+  margin-top: 20px;
+  text-align: center; 
+}
+
+#InterestingFactsAboutMeFacts {
+  font-size: 15px; 
+  height: 260px;
+}
+
+header {
+  display: none; 
+}
+
+main {
+  margin-top: 15px; 
+  margin-left: 0px;
+}
+
+article {
+  height: 2100px;
+}
+
+#flex-item {
+  height: 300px;
+}
+
+aside {
+  display: none; 
+}
+
+.MyDiv {
+  width: 100%;
+}
+
+button.menu {
+  display: block; 
+  border-radius: 5px;
+  background-color: lightgray; 
+  transition: background-color 1s, color 1s;
+}
+
+#SmallNavBar {
+  position: fixed; 
+  box-shadow: 0px 2px black; 
+  background-color: white; 
+  justify-content: space-between; 
+  width: 100%;
+  z-index: 9999;
+} 
+
+input[type = email]{
+  width: 50%;
+}
+
+img.ProfilePicture {
+  width: 200px; 
+  height: 200px; 
+}
+
+input[type = email], input[type=tel]{
+  width: 10%; 
+  font-size: 10px; 
+  height: 15px; 
+}
+
+select {
+  width: 10%; 
+  font-size: 10px;
+  height: 15px; 
+}
+
+.TextContainerMain {
+  width: 100%;
+}
+
+.TopDescription {
+font-size: 12px;
+}
+
+h2#Marker2, h2#Marker3 {
+  margin-top: 200px;
+}
+
+#Container {
+  width: 110px;
+}
+
+#sectionFlexItem1, #sectionFlexItem2, #sectionFlexItem3, #sectionFlexItem4, #sectionFlexItem5 {
+  font-size: 12px; 
+}
+
+article {
+  flex: 6;  
+}
+
+input[type = email]{
+  width: 30%; 
+}
+
+input[type = tel]{
+  width: 30%; 
+}
+
+select {
+  width: 30%; 
+}
+
+.textReduction{
+  font-size: 15px;
+}
+
+#ImageFrame {
+  margin-top: 50px;
+}
+
+#DropDownBoxAside, #DropDownBoxAsideHomepage, #DropDownBoxAsideLearningJourney, #DropDownBoxAsidePersonalAchievements  {
+  left: 170px; 
+}
+
+#DropDownBoxAsidePersonalAchievements {
+  bottom: 5px; 
+}
+
+article {
+  height: 1500px;
+}
+
+#ImageFrame {
+  margin-top: 15px;
+}
+
+section {
+  margin-top: 100px;
+}
+}

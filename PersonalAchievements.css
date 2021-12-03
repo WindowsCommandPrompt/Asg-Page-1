@@ -1,0 +1,900 @@
+body {
+      font-family: Varela Round, sans-serif;
+      display: flex; 
+      flex-direction: column; 
+      overflow-x: hidden; 
+    }
+
+    h2#Marker1, h2#Marker2, h2#Marker3 {
+      text-decoration: underline; 
+      text-align: center; 
+    }
+
+    ul {
+      list-style-type: none; 
+    }
+
+    a {
+      text-decoration: none; 
+      color: green; 
+      cursor: pointer; 
+      display: block;
+    }
+
+    /*Changes text color to black */ 
+    a:hover {
+      color: black; 
+    }
+
+    /*create a lightblue background when text is hovered. FOR HEADER NAVIGATION BAR*/
+    a.dropdownboxOnHeaderNavHome:hover {
+      background-color: lightblue; 
+    }
+
+    a.dropdownboxOnHeaderNavAboutMe:hover {
+      background-color: lightblue; 
+    }
+
+    a.dropdownboxOnHeaderNavLearningJourney:hover {
+      background-color: lightblue; 
+    }
+
+    a.dropdownboxOnHeaderNavPersonalAchievements:hover {
+      background-color: lightblue; 
+    }
+
+    a.dropdownboxOnHeaderNavPersonalProjects:hover {
+      background-color: lightblue; 
+    }
+
+
+    /*ASIDE NAVIGATION BAR ONLY */
+    a.dropdownboxOnAsideNavHome:hover {
+      background-color: lightblue; 
+    }
+
+    a.dropdownboxOnAsideNavAboutMe:hover {
+      background-color: lightblue; 
+    }
+
+    a.dropdownboxOnAsideNavLearningJourney:hover {
+      background-color: lightblue; 
+    }
+
+    a.dropdownboxOnAsideNavPersonalAchievements:hover {
+      background-color: lightblue; 
+    }
+
+    a.dropdownboxOnAsideNavPersonalProjects:hover {
+      background-color: lightblue; 
+    }
+
+    /*OVERLAY DROPDOWN MENU ONLY */ 
+    a.dropdownbox:hover {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background-color: lightblue; 
+      width: 100%;
+    }
+
+    header {
+      display: flex; 
+      flex-direction: row; 
+      background-color: lightgreen; 
+      justify-content: center; 
+      height: 100px;
+    }
+
+    #SmallNavBar {
+      background-color: lightgray; 
+      display: flex; 
+      flex-direction: row;  
+      justify-content: center; 
+    }
+
+    img {
+      width: 30px; 
+      height: 30px; 
+      margin-left: 5px;
+    }
+
+    figcaption {
+      font-size: 10px; 
+    }
+
+    img:hover {
+      cursor: pointer; 
+    }
+
+    #MyDiv, #MyDiv1, #MyDiv2, #MyDiv3, #MyDiv4, #MyDiv5 { 
+      font-size: 15px; 
+      width: 150px; 
+      background-color: lightgreen; 
+      color: white; 
+      font-weight: bold;
+      transition: background-color 1s, color 1s;  
+    }
+
+    #MyDiv:hover{
+      background-color: white;
+    }
+
+    #MyDiv1:hover{
+      background-color: white;
+    }
+
+    #MyDiv2:hover{
+      background-color: white;
+    }
+
+    #MyDiv3:hover{
+      background-color: white;
+    }
+
+    #MyDiv4:hover{
+      background-color: white;
+    }
+
+    #MyDiv5:hover{
+      background-color: white;
+    }
+
+    main {
+      background-color: white; 
+      display: flex; 
+      height: 530px; 
+      flex-direction: row; 
+    }
+
+    /*aside#left {
+      background-color: white; 
+      flex: 0; 
+    }
+    */
+
+    #Container {
+      display: none; 
+      flex-direction: column; 
+      position: fixed; 
+      width: 20%; 
+      height: 30%;
+      border-style: solid;
+      border-width: 1px;
+      background-image: linear-gradient(180deg, white, navy,white);
+      border-radius: 5px;
+      z-index: 5; 
+    }
+
+    article{
+      height: 3050px; 
+      margin-left: 10px; 
+      flex: 5; 
+      display: flex; 
+      flex-direction: column; 
+      position: relative;
+    }
+
+    section {
+      background-color: lightgray; 
+      display: flex; 
+      flex-direction: column; 
+      text-align: center;
+    }
+
+    footer {
+      background-color: black; 
+      color: white;
+      text-align: center;
+    }
+
+    .sectionContainer1 {
+      background-color: lightgray; 
+      display: flex; 
+      flex-direction: row; 
+      align-items: flex-start; 
+    }
+
+    #sectionFlexItem1 {
+      background-color: antiquewhite;
+      height: 40px; 
+      width: 100%; 
+      border-style: solid; 
+      border-width: 1px; 
+      border-radius: 5px; 
+      transition: background-color 1s, border-bottom-color 1s, border-bottom-width 1s;
+      font-size: 15px; 
+    }
+
+    #sectionFlexItem1:hover{
+      background-color: white;
+      text-align: center;  
+      border-bottom-color: turquoise; 
+      border-bottom-width: 4px;
+    }
+
+    #sectionFlexItem2 {
+      background-color: lightblue;
+      width: 100% ;
+      height: 40px;
+      border-style: solid; 
+      border-width: 1px; 
+      border-radius: 5px;  
+      font-size: 15px; 
+      transition: background-color 1s,border-bottom-color 1s, border-bottom-width 1s;  
+    }
+
+    #sectionFlexItem2:hover {
+      background-color: white; 
+      text-align: center; 
+      border-bottom-color: red; 
+      border-bottom-width: 4px;
+    }
+
+    #sectionFlexItem3 {
+      background-color: yellow;
+      width: 100%;
+      height: 40px;   
+      border-style: solid; 
+      border-width: 1px; 
+      border-radius: 5px; 
+      border-bottom-color: transparent; 
+      font-size: 15px; 
+      transition: background-color 1s, border-bottom-color 1s, border-bottom-width 1s; 
+    }
+
+    #sectionFlexItem3:hover {
+      background-color: white; 
+      text-align: center; 
+      border-bottom-color: blue; 
+      border-bottom-width: 4px; 
+    }
+
+    #sectionFlexItem4 {
+      background-color: orange;
+      width: 100%;  
+      height: 40px; 
+      border-style: solid; 
+      border-width: 1px; 
+      border-radius: 5px; 
+      font-size: 15px; 
+      transition: background-color 1s, border-bottom-color 1s, border-bottom-width 1s; 
+    }
+
+    #sectionFlexItem4:hover {
+      background-color: white; 
+      text-align: center; 
+      border-bottom-color: aqua; 
+      border-bottom-width: 4px; 
+    }
+
+    #sectionFlexItem5 {
+      background-color: bisque;
+      width: 100%;  
+      height: 40px; 
+      border-style: solid; 
+      border-width: 1px; 
+      border-radius: 5px; 
+      font-size: 15px; 
+      transition: background-color 1s, border-bottom-color 1s, border-bottom-width 1s; 
+    }
+
+    #sectionFlexItem5:hover {
+      background-color: white; 
+      text-align: center; 
+      border-bottom-color: violet; 
+      border-bottom-width: 4px; 
+    }
+
+    /*Don't need hover transition*/ 
+
+    #sectionFlexItem6 {
+      background-color: ghostwhite;
+      width: 100%;  
+      height: 40px; 
+      border-style: solid; 
+      border-width: 1px; 
+      border-radius: 5px; 
+      font-size: 15px; 
+      transition: background-color 1s, border-bottom-color 1s, border-bottom-width 1s; 
+      display: flex;
+      flex-direction: row;
+      /*Insert icons*/ 
+    }
+
+    #DropDownBoxAside {
+      box-shadow: 1px 1px black; 
+      background-color: white; 
+      border-style: solid; 
+      border-width: 1px; 
+      border-top-width: 4px; 
+      border-top-color: blue; 
+      width: 300px; 
+      display: none;  
+      border-radius: 5px; 
+      position: relative; 
+      left: 220px; 
+      z-index: 1; 
+    }
+
+    #DropDownBoxAsideHomepage {
+      box-shadow: 1px 1px black; 
+      border-style: solid; 
+      background-color: white;
+      border-width: 1px; 
+      border-top-width: 4px; 
+      border-top-color: orange; 
+      width: 300px; 
+      display: none; 
+      position: relative;
+      border-radius: 5px; 
+      left: 220px; 
+      z-index: 1; 
+    }
+
+    #DropDownBoxAsideLearningJourney {
+      box-shadow: 1px 1px black; 
+      border-style: solid; 
+      background-color: white;
+      border-width: 1px; 
+      border-top-width: 4px; 
+      border-top-color: red; 
+      width: 300px; 
+      display: none; 
+      position: relative;
+      border-radius: 5px; 
+      left: 220px; 
+      z-index: 1; 
+    }
+
+    #DropDownBoxAsidePersonalAchievements {
+      box-shadow: 1px 1px black; 
+      border-style: solid; 
+      background-color: white;
+      border-width: 1px; 
+      border-top-width: 4px; 
+      border-top-color: lightblue; 
+      width: 300px; 
+      display: none; 
+      position: relative;
+      border-radius: 5px; 
+      left: 220px; 
+      bottom: 15px; 
+      z-index: 1;
+    }
+
+    #MainNavBarHomepageHome, #MainNavBarHomepageAboutMe, #MainNavBarHomepageLearningJourney, #MainNavBarHomepagePersonalAchievements {
+      border-style: solid; 
+      background-color: white;
+      border-width: 1px; 
+      width: 150px; 
+      display: none; 
+      border-radius: 5px; 
+      text-align: center; 
+      border-color: black;
+    }
+
+    #MainNavBarOverlay, #MainNavBarOverlay1, #MainNavBarOverlay2, #MainNavBarOverlay3{
+      background-color: white; 
+      width: 100%; 
+      display: none; 
+    }
+
+    /*#dropdownMethod:hover #MainNavBarOverlay{
+      display: block; 
+    }
+    */
+
+    #dropdownMethodHeaderNav1, #dropdownMethodHeaderNav2, #dropdownMethodHeaderNav3,#dropdownMethodHeaderNav4, #dropdownMethod1, #dropdownMethod2, #dropdownMethod3, #dropdownMethod4, #dropdownMethod5 {
+      display: block; 
+      position: relative; 
+    }
+
+    #dropdownMethodHeaderNav1:hover #MainNavBarHomepageHome {
+      display: block; 
+    }
+
+    
+    #dropdownMethodHeaderNav2:hover #MainNavBarHomepageAboutMe {
+      display: block; 
+    }
+
+    
+    #dropdownMethodHeaderNav3:hover #MainNavBarHomepageLearningJourney {
+      display: block; 
+    }
+
+    
+    #dropdownMethodHeaderNav4:hover #MainNavBarHomepagePersonalAchievements {
+      display: block; 
+    }
+
+    /*ASIDE MENU*/
+    #dropdownMethod1:hover #DropDownBoxAside { /*About Me*/ 
+      display: block; 
+    }
+
+    #dropdownMethod2:hover #DropDownBoxAsideHomepage {
+      display: block; 
+    }
+
+    #dropdownMethod3:hover #DropDownBoxAsideLearningJourney  {
+      display: block; 
+    }
+
+    #dropdownMethod4:hover #DropDownBoxAsidePersonalAchievements{
+      display: block; 
+    }
+
+    
+    /*Centralising containers align stuff*/
+    .buttonContainer, #overlayNavBarContentsHomepage1, #overlayNavBarContentsHomepage2, #overlayNavBarContentsAboutMe1, #overlayNavBarContentsAboutMe2, #overlayNavBarContentsLearningJourney1, #overlayNavBarContentsLearningJourney2, #overlayNavBarContentsLearningJourney3, #overlayNavBarContentsPersonalAchievements1, #overlayNavBarContentsPersonalAchievements2{
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+    }
+    /*===================================================================*/ 
+
+    form {
+      background-color: white; 
+    }
+
+    input[type = email]{
+      font-size: 12px; 
+      width: 50%; 
+      border-radius: 4px; 
+      margin-bottom: 5px; 
+      transition: border-color 1s, background-color 1s;
+      height: 20px;
+    }
+
+    input[type = email]:hover {
+      border-color: red; 
+      background-color: yellow; 
+    }
+
+    input[type = tel]{
+      font-size: 12px; 
+      width: 50%; 
+      border-radius: 4px; 
+      margin-bottom: 5px; 
+      transition: border-color 1s, background-color 1s;
+      height: 20px;
+    }
+
+    input[type = tel]:hover {
+      border-color: red; 
+      background-color: yellow; 
+    }
+
+    select {
+      border-radius: 2px; 
+      margin-bottom: 5px; 
+      width: 50%; 
+    }
+
+    select:hover {
+      border-color: red; 
+      background-color: yellow; 
+    }
+
+    button.menu {
+      display: none; 
+    }
+
+    button.menu:hover {
+      background-color: black;
+      color: white;
+      cursor: pointer; 
+    }
+
+    button.submit{
+      border-style: solid;
+      background-color: white; 
+      border-radius: 4px; 
+      transition: background-color 1s, color 1s;  
+    }
+    
+    button.submit:hover {
+      background-color: green; 
+      color: white; 
+      cursor: pointer; 
+    }
+
+    #reset{
+      border-style: solid;
+      width: 110px; 
+      background-color: white; 
+      border-radius: 4px; 
+      transition: background-color 1s, color 1s;  
+    }
+    
+    #reset:hover {
+      background-color: red; 
+      color: white; 
+      cursor: pointer; 
+    }
+
+    #overlayMenu {
+      height: 100%; 
+      width: 100%; 
+      background-color: black; 
+      position: fixed; 
+      opacity: 0.95;  
+      display: none;
+    }
+    /*Create a scrollable overlay menu when the phone is landscape */ 
+    @media (orientation: landscape){
+      #overlayMenu{
+        overflow-y: scroll;
+      }
+    }
+
+    a.overlayMenu {
+      margin-top: 30px; 
+      font-size: 18px; 
+      text-align: center; 
+      font-weight: bold; 
+    }
+
+    a.overlayMenu:hover {
+      background-color: white; 
+    }
+
+    /*Create another flex container to store image*/
+
+    .flexContainerForImageRow1 {
+      display: flex; 
+      flex-direction: column;
+      justify-content: center;
+      width: 100%; 
+    }
+
+    /*Create 6 of these*/ 
+    .ContainerForImageNumberIndicator {
+      display: block;
+      margin-top: 20px;
+    }
+
+    #ImageNumberIndicatorImage1,  #ImageNumberIndicatorImage2, #ImageNumberIndicatorImage3, #ImageNumberIndicatorImage4, #ImageNumberIndicatorImage5, #ImageNumberIndicatorImage6{
+      position: absolute; 
+      width: 50px; 
+      height: 50px; 
+      z-index: 2; 
+    }
+
+    #SomeText {
+      background-color: black;
+      color: white;
+      z-index: 1;  
+      border-radius: 3px; 
+      position: relative; 
+      text-align: center;
+      width: 30%;
+      margin-top: 5px;
+      margin-left: 15px;
+    }
+
+    .Layer1 {
+      display: flex;
+      flex-direction: row; 
+      margin-top: 20px;
+      border-style: solid;
+      border-width: 0.5px;
+    }
+
+    /*position the image to the center*/ 
+
+    
+    .ImageContainer {
+      display: flex; 
+      width: 50%;
+    }
+    
+
+    .TextContainer {
+      width: 50%;
+      margin-top: 20px;
+    }
+
+    .Base {
+      background-image: linear-gradient(red, violet);
+      padding: 3px; 
+    }
+
+    .Top {
+      background-color: white; 
+      padding: 3px;
+      text-align: center;
+    }
+
+    .ImageFormatting {
+      width: 100%; 
+      height: auto;
+      margin: auto;
+    } 
+
+    button#enlarge, #enlarge1, #enlarge2, #enlarge3, #enlarge4, #enlarge5 {
+      background-color: green; color: white; 
+      width: 100%; 
+      border-style: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      height: 50px;
+      font-size: 20px;
+    }  
+
+    #enlarge:hover {
+      background-color: darkgreen;
+      cursor: pointer; 
+    } 
+    
+    #enlarge1:hover{
+      background-color: darkgreen;
+      cursor: pointer; 
+    } 
+    
+    #enlarge2:hover {
+      background-color: darkgreen;
+      cursor: pointer;       
+    }
+
+    #enlarge3:hover {
+      background-color: darkgreen;
+      cursor: pointer; 
+    }
+
+    #enlarge4:hover {
+      background-color: darkgreen;
+      cursor: pointer; 
+    }
+
+    #enlarge5:hover {
+      background-color: darkgreen;
+      cursor: pointer; 
+    }
+
+    #ShowImage, #ShowImage1, #ShowImage2, #ShowImage3, #ShowImage4, #ShowImage5 {
+      background-color: black;
+      padding: 10px; 
+      height: 100%; 
+      width: 100%; 
+      display: none;
+      color: white;
+      position: fixed; 
+      /*Hide container unless 'enlarge image' button has been clicked. */ 
+      overflow-y: scroll;
+      z-index: 7; 
+    }
+
+    #closeImage, #closeImage1, #closeImage2, #closeImage3, #closeImage4, #closeImage5 {
+      position: fixed;  
+    }
+
+    .closeImageStyling {
+      background-color: white;
+      color: black;
+      transition: background-color 1s, color 1s;
+      border-radius: 5px;
+      border-width: 1px;
+    }
+
+    .closeImageStyling:hover {
+      background-color: red;
+      color: white; 
+      cursor: pointer;
+    }
+
+    #ImageContainer:hover {
+      background-color: white;  
+      /*background invisible*/  
+    }
+
+    #Status, #Status1, #Status2, #Status3, #Status4, #Status5 {
+      display: none;
+      text-align: center;
+      font-size: 25px;
+      color: red; 
+    }
+    
+    @media (max-width: 400px){
+
+      button#enlarge, #enlarge1, #enlarge2, #enlarge3, #enlarge4, #enlarge5 {
+        height: 30px;
+        font-size: 10px;
+      }
+
+
+      a.overlayMenu{
+        font-size: 15px; 
+      }
+
+      #InterestingFactsAboutMeFacts {
+        font-size: 15px; 
+        height: 250px;
+      }
+
+      label {
+        font-size: 10px;
+      }
+
+      .SumUpBox {
+        font-size: 10px;
+      }
+
+      .centralise {
+        font-size: 15px;
+      }
+
+      #resize {
+        font-size: 10px;
+      }
+    }
+    
+    @media (max-width: 1100px){
+      #Status, #Status1, #Status2, #Status3, #Status4, #Status5 {
+        display: block;
+      }
+
+      .Top {
+        font-size: 10px;
+      }
+
+      .centralise {
+        text-align: center;
+      }
+
+      .resize {
+        font-size: 15px;
+      }
+
+      .ImageContainer {
+        width: 100%;
+      }
+
+      .flexContainerForImageRow1 {
+        width: 60%; 
+      }
+
+      .Layer1 {
+        flex-direction: column;
+      }
+
+      #Shift {
+        margin-top: 20px;
+        text-align: center; 
+      }
+
+      .flexContainerForImageRow1 {
+        margin-top: 10px; 
+        flex-direction: column;
+      }
+
+      
+      .flexContainerForImageRow1, #Layer1 {
+        width: 100%;
+      }
+      
+      #imageFormat{
+        width: 100%
+      }
+
+      #InterestingFactsAboutMeFacts {
+        font-size: 15px; 
+        height: 260px;
+      }
+
+      header {
+        display: none; 
+      }
+
+      main {
+        margin-top: 15px; 
+      }
+
+      #flex-item {
+        height: 300px;
+      }
+      
+      aside {
+        display: none; 
+      }
+
+      #MyDiv {
+        width: 100%;
+      }
+
+      button.menu {
+        display: block; 
+        border-radius: 5px;
+        background-color: lightgray; 
+        transition: background-color 1s, color 1s;
+      }
+
+      #SmallNavBar {
+        position: fixed;
+        z-index: 6; 
+        box-shadow: 0px 2px black; 
+        background-color: white; 
+        justify-content: space-between; 
+        width: 100%;
+      } 
+
+      input[type = email]{
+        width: 50%;
+      }
+
+      img.ProfilePicture {
+        width: 200px; 
+        height: 200px; 
+      }
+
+      input[type = email], input[type=tel]{
+        width: 10%; 
+        font-size: 10px; 
+        height: 15px; 
+      }
+
+      select {
+        width: 10%; 
+        font-size: 10px;
+        height: 15px; 
+      }
+
+      .TextContainer {
+        width: 100%;
+      }
+
+      /*Not going to use #Top as it is because I want to make both containers enlarge with increasing font.*/
+
+      .Base {
+        font-size: 20px;
+      }
+
+    }
+
+    @media (max-width: 1100px){
+
+      .TextContainer {
+        font-size: 10px;
+      }
+
+      #Container {
+        width: 110px;
+      }
+
+      #sectionFlexItem1, #sectionFlexItem2, #sectionFlexItem3, #sectionFlexItem4, #sectionFlexItem5 {
+        font-size: 12px; 
+      }
+
+      article {
+        flex: 6;  
+      }
+
+      input[type = email]{
+        width: 30%; 
+      }
+
+      input[type = tel]{
+        width: 30%; 
+      }
+
+      select {
+        width: 30%; 
+      }
+
+      .textReduction{
+        font-size: 15px;
+      }
+    }
+
+    @media (min-width: 1100px)
+    {
+      #DropDownBoxAside, #DropDownBoxAsideHomepage, #DropDownBoxAsideLearningJourney, #DropDownBoxAsidePersonalAchievements  {
+        left: 170px; 
+      }
+
+      #DropDownBoxAsidePersonalAchievements {
+        bottom: 5px; 
+      }
+    }

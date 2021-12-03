@@ -1,0 +1,532 @@
+<!DOCTYPE html> 
+<!--stable--> 
+<html lang = "en">
+  <head> 
+    <meta charset = "UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href = "normalise.css" rel = "stylesheet" type = "text/css">
+    <link href = "PersonalAchievements.css" rel = "stylesheet" type = "text/css"> 
+    <title> Personal Achievements </title> 
+  </head>
+
+  <body> 
+    <header>
+      <div id = "MyDiv">
+        <a href = "https://Homepage.masterzy1234.repl.co" onclick = "return ConfirmationRedirectHomepage()"><img style = "width: 50px; height: 50px; border-radius: 50%; border-style: solid; border-width: 1px; " src = "https://static.wixstatic.com/media/3e6e93_5ecefaf8786b463792e4913c427c8f14~mv2.jpg/v1/fill/w_76,h_78,al_c,q_80,usm_0.66_1.00_0.01/website%20profile%20image.webp" alt = "Button to return to homepage"></a>
+      </div> 
+      <div id = "MyDiv1"> 
+        <div id = "dropdownMethodHeaderNav1">  
+          <p style = "text-align: center"><a href = "https://Homepage.masterzy1234.repl.co" class = "dropdownbox" onclick = "return ConfirmationRedirectHomepage()"> Home </a></p>
+
+            <div id = "MainNavBarHomepageHome"> 
+              <br>
+              <a href = "https://Homepage.masterzy1234.repl.co#Marker1" class = "dropdownbox" onclick = "return ConfirmationRedirectHomepage()">What's this? </a> 
+              <br> 
+              <a href = "https://Homepage.masterzy1234.repl.co#Marker2" class = "dropdownbox" onclick = "return ConfirmationRedirectHomepage()">Contents</a>
+              <br> 
+            </div> 
+        </div>
+      </div>
+      <div id = "MyDiv2">
+        <div id = "dropdownMethodHeaderNav2">
+          <p style = "text-align: center"><a href = "https://About-Me-Page.masterzy1234.repl.co#" class = "dropdownboxOnHeaderNavAboutMe" onclick = "return ConfirmationRedirectAboutMe()"> About Me</a></p> 
+          <div id = "MainNavBarHomepageAboutMe">
+            <br>
+            <a href = "https://About-Me-Page.masterzy1234.repl.co#Marker2" class = "dropdownbox" onclick = "return ConfirmationRedirectAboutMe()">My Vision</a> 
+            <br> 
+            <a href = "https://About-Me-Page.masterzy1234.repl.co#Marker3" class = "dropdownbox" onclick = "return ConfirmationRedirectAboutMe()">Interesting facts about me</a> 
+            <br>
+          </div> 
+        </div>
+      </div> 
+      <div id = "MyDiv3">
+        <div id = "dropdownMethodHeaderNav3">
+          <p style = "text-align: center"><a href = "https://My-Learning-Journey-page.masterzy1234.repl.co#" onclick = "return ConfirmationRedirectLearningJourney()" class = "dropdownbox"> Learning Journey</a></p> 
+          <div id = "MainNavBarHomepageLearningJourney">
+            <br> 
+            <a href = "https://My-Learning-Journey-page.masterzy1234.repl.co#Marker1" class = "dropdownbox" onclick = "return ConfirmationRedirectLearningJourney()">Primary School</a> 
+            <br>
+            <a href = "https://My-Learning-Journey-page.masterzy1234.repl.co#Marker2" class = "dropdownbox" onclick = "return ConfirmationRedirectLearningJourney()">Secondary School</a> 
+            <br> 
+            <a href = "https://My-Learning-Journey-page.masterzy1234.repl.co#Marker3" class = "dropdownbox" onclick = "return ConfirmationRedirectLearningJourney()">Tertiary</a> 
+            <br> 
+          </div> 
+        </div> 
+      </div> 
+      <div id = "MyDiv4"> 
+        <div id = "dropdownMethodHeaderNav4">
+          <p style = "text-align: center"><a href = "https://Personal-Achievements-page.masterzy1234.repl.co" class = "dropdownbox" onclick = "return ConfirmationRedirectPersonalAchievements()"> Personal achievements</a></p>
+          <div id = "MainNavBarHomepagePersonalAchievements">
+            <br> 
+            <a href = "https://Personal-Achievements-page.masterzy1234.repl.co#Marker1" class = "dropdownbox" onclick = "return ConfirmationRedirectPersonalAchievements()" >Primary School Achievements</a> 
+            <br>
+            <a href = "https://Personal-Achievements-page.masterzy1234.repl.co#Marker2" class = "dropdownbox" onclick = "return ConfirmationRedirectPersonalAchievements()">Secondary School Achievements</a> 
+            <br> 
+          </div>  
+        </div> 
+      </div> 
+      <div id = "MyDiv5"> 
+        <div id = "dropdownMethod"> 
+          <p style = "text-align: center"><a href = "https://Personal-Projects-page.masterzy1234.repl.co" class = "dropdownboxOnHeaderNavPersonalProjects" onclick = "return ConfirmationRedirectPersonalProjects()"> Personal Projects</a></p>
+        </div>
+      </div> 
+    </header> 
+    <div id = "SmallNavBar">
+        <button class = "menu" type = "button" onclick  = "openNav(), Control()">MENU</button> 
+        <div id = "overlayMenu"> 
+          <button type = "button" onclick = "closeNav()" style = " width: 100%; height: 38px; border-radius: 5px;cursor: pointer;">CLOSE OVERLAY MENU</button> 
+          <!--<div id = "dropdownMethod">--> 
+            <a href = "https://Homepage.masterzy1234.repl.co" class = "overlayMenu" onclick = "return ConfirmationRedirectHomepage(); closeNav(); "> Homepage </a>
+            <!--<center> tag replaced with flex container--> 
+            <div class = "buttonContainer"> 
+              <button id = "deploy"> expand </button>
+            </div> 
+            <div id = "MainNavBarOverlay"> 
+              <br> 
+              <div id = "overlayNavBarContentsHomepage1"> 
+                <a href = "https://Homepage.masterzy1234.repl.co#Marker1" class = "dropdownbox" onclick = "return ConfirmationRedirectHomepage(); closeNav();">What's this? </a>
+              </div>  
+              <br> 
+              <div id = "overlayNavBarContentsHomepage2">
+                <a href = "https://Homepage.masterzy1234.repl.co#Marker2" class = "dropdownbox" onclick = "return ConfirmationRedirectHomepage(); closeNav();">Contents</a>
+              </div> 
+              <br> 
+            </div>
+          <!--</div> -->
+          <!--<div id = "dropdownMethod"> -->
+            <a href = "https://About-Me-Page.masterzy1234.repl.co" class = "overlayMenu" onclick = "return ConfirmationRedirectAboutMe(); closeNav();"> About Me </a> 
+            <div class = "buttonContainer">
+              <button id = "deploy1"> expand </button>
+            </div>  
+            <div id = "MainNavBarOverlay1">
+              <br> 
+              <div id = "overlayNavBarContentsAboutMe1"> 
+                <a href = "https://About-Me-Page.masterzy1234.repl.co#Marker2" class = "dropdownbox" onclick = "return ConfirmationRedirectAboutMe(); closeNav();">My Vision</a> 
+              </div> 
+              <br> 
+              <div id = "overlayNavBarContentsAboutMe2"> 
+                <a href = "https://About-Me-Page.masterzy1234.repl.co#Marker3" class = "dropdownboxOnOverlayNavSectionElement2AboutMe" onclick = "return ConfirmationRedirectAboutMe(); closeNav();">Interesting Facts About Me</a> 
+              </div> 
+              <br> 
+            </div>
+          <!--</div> -->
+          <!--<div id = "dropdownMethod"> -->
+            <a href = "https://My-Learning-Journey-page.masterzy1234.repl.co" class = "overlayMenu" onclick = "return ConfirmationRedirectLearningJourney(); closeNav(); "> Learning Journey </a> 
+            <div class = "buttonContainer"> 
+              <button id = "deploy2"> expand </button>
+            </div> 
+            <div id = "MainNavBarOverlay2">
+              <br>  
+              <div id = "overlayNavBarContentsLearningJourney1"> 
+                <a href = "https://My-Learning-Journey-page.masterzy1234.repl.co#Marker1" class = "dropdownbox" onclick = "return ConfirmationRedirectLearningJourney(); closeNav();">Primary School</a>
+              </div>  
+              <br> 
+              <div id = "overlayNavBarContentsLearningJourney2"> 
+                <a href = "https://My-Learning-Journey-page.masterzy1234.repl.co#Marker2" class = "dropdownbox" onclick = "return ConfirmationRedirectLearningJourney(); closeNav();">Secondary School</a> 
+              </div> 
+              <br> 
+              <div id = "overlayNavBarContentsLearningJourney3"> 
+                <a href = "https://My-Learning-Journey-page.masterzy1234.repl.co#Marker3" class = "dropdownbox" onclick = "return ConfirmationRedirectLearningJourney(); closeNav();">Tertiary</a>
+              </div> 
+              <br> 
+            </div>
+          <!--</div> -->
+          <!--<div id = "dropdownMethod"> -->
+            <a href = "https://Personal-Achievements-page.masterzy1234.repl.co" class = "overlayMenu" onclick = "return ConfirmationRedirectPersonalAchievements()"> Personal Achievements </a> 
+            <div class = "buttonContainer">
+              <button id = "deploy3"> expand </button>
+            </div> 
+            <div id = "MainNavBarOverlay3">
+              <br> 
+              <div id = "overlayNavBarContentsPersonalAchievements1"> 
+                <a href = "https://Personal-Achievements-page.masterzy1234.repl.co#Marker1" class = "dropdownbox" onclick = "return ConfirmationRedirectPersonalAchievements(); closeNav();">Primary School Achievements</a>
+              </div>  
+              <br> 
+              <div id = "overlayNavBarContentsPersonalAchievements2"> 
+                <a href = "https://Personal-Achievements-page.masterzy1234.repl.co#Marker2" class = "dropdownbox" onclick = "return ConfirmationRedirectPersonalAchievements(); closeNav();">Secondary School Achievements</a> 
+              </div> 
+              <br>
+            </div>
+          <!--</div>-->
+            <a href = "https://Personal-Projects-page.masterzy1234.repl.co" class = "overlayMenu" onclick = "return ConfirmationRedirectPersonalProjects(); closeNav();"> Personal Projects </a>
+        </div>       
+    <!--To make the image a hyperlink, make sure that <img> is BETWEEN <a> and </a>, if not the hyperlink WILL NOT WORK -->
+    <a href = "https://Contact-Card.masterzy1234.repl.co#LinkedIn" onclick = "return ConfirmationRedirectLinkedInProfile()"><img src = "https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png" alt = "LinkedIn Profile"></a> 
+    <a href = "https://Contact-Card.masterzy1234.repl.co#IG" onclick = "return ConfirmationRedirectIGProfile()"><img src = "https://cdn.icon-icons.com/icons2/2428/PNG/512/instagram_black_logo_icon_147122.png" alt = "IG Profile"></a> 
+    <a href = "https://Contact-Card.masterzy1234.repl.co" onclick = "return ConfirmationRedirectContactPage()"><img src = "https://cdn.icon-icons.com/icons2/2428/PNG/512/whatsapp_black_logo_icon_147050.png" alt = "WA"></a>
+    </div> <!--#SmallNavBar end--> 
+    <div id = "Shift"> 
+      <h1>Personal Achievements</h1>
+    </div> 
+    <main> 
+      <aside id = "left" > 
+        <button id = "Draw" style = "position: fixed; font-size: 15px; opacity: 0.75; z-index: 4" >Nav</button>
+        <div id = "Container"> 
+          <h2 style = "display: flex; flex-direction: row; justify-content: center">
+            Personal Achievements
+          </h2>
+          <div id = "dropdownMethod2"> 
+            <div id = "sectionFlexItem1"><a href = "https://Homepage.masterzy1234.repl.co" class = "dropdownbox" onclick = "return ConfirmationRedirectHomepage()">Homepage</a>
+              <div id = "DropDownBoxAsideHomepage"> 
+                <p> -Home page- </p>
+                <br>
+                <a href = "https://Homepage.masterzy1234.repl.co#Marker1" class = "dropdownbox" onclick = "return ConfirmationRedirectHomepage()">What's this? </a> 
+                <br>
+                <a href = "https://Homepage.masterzy1234.repl.co#Marker2" class = "dropdownbox" onclick = "return ConfirmationRedirectHomepage()">Contents</a> 
+                <br> 
+              </div> 
+            </div>
+          </div>
+          <div id = "dropdownMethod1"> 
+            <div id = "sectionFlexItem2"><a href = "https://About-Me-Page.masterzy1234.repl.co" class = "dropdownboxOnAsideNavHome" onclick = "return ConfirmationRedirectAboutMe()">About Me</a>
+              <div id = "DropDownBoxAside"> 
+                <p> -About Me Page- </p>
+                <br>
+                <a href = "https://About-Me-Page.masterzy1234.repl.co#Marker2" class = "dropdownboxOnAsideSectionElement1AboutMe" onclick = "return ConfirmationRedirectAboutMe()">My Vision</a> 
+                <br>
+                <a href = "https://About-Me-Page.masterzy1234.repl.co#Marker3" class = "dropdownboxOnAsideSectionElement2AboutMe" onclick = "return ConfirmationRedirectAboutMe()">Interesting facts about me</a> 
+                <br>  
+              </div> 
+            </div> 
+          </div> 
+          <div id = "dropdownMethod3">
+            <div id = "sectionFlexItem3"><a href = "https://My-Learning-Journey-page.masterzy1234.repl.co" onclick = "return ConfirmationRedirectLearningJourney()" class = "dropdownboxOnAsideNavLearningJourney">Learning Journey </a>
+              <div id = "DropDownBoxAsideLearningJourney"> 
+                <p> -My Learning Journey Page-</p> 
+                <br> 
+                <a href = "https://My-Learning-Journey-page.masterzy1234.repl.co#Marker1" class = "dropdownbox" onclick = "return ConfirmationRedirectLearningJourney()" > Primary School </a> 
+                <br> 
+                <a href = "https://My-Learning-Journey-page.masterzy1234.repl.co#Marker2" class = "dropdownbox" onclick = "return ConfirmationRedirectLearningJourney()" > Secondary School </a> 
+                <br> 
+                <a href = "https://My-Learning-Journey-page.masterzy1234.repl.co#Marker3" class = "dropdownbox" onclick = "return ConfirmationRedirectLearningJourney()" >Tertiary</a> 
+                <br> 
+              </div> 
+            </div> 
+          </div>
+          <div id = "dropdownMethod4"> 
+            <div id = "sectionFlexItem4"><a href = "https://Personal-Achievements-page.masterzy1234.repl.co" class = "dropdownbox" onclick = "return ConfirmationRedirectPersonalAchievements()">Personal Achievements</a>
+              <div id = "DropDownBoxAsidePersonalAchievements">
+                <p> -Personal Achievements page-</p> 
+                <br>
+                <a href = "https://Personal-Achievements-page.masterzy1234.repl.co#Marker1" class = "dropdownbox" onclick = "return ConfirmationRedirectPersonalAchievements()">Primary School Achievements </a> 
+                <br>
+                <a href = "https://Personal-Achievements-page.masterzy1234.repl.co#Marker2" class = "dropdownbox" onclick = "return ConfirmationRedirectPersonalAchievements()">Secondary School Achievements</a>
+                <br>
+              </div>  
+            </div>
+          </div>
+          <!--dropdownMethod5 id does not trigger the displaying of a dropdown menu, but rather determines the height of the container--> 
+          <div id = "dropdownMethod5"> 
+            <div id = "sectionFlexItem5">
+              <a href = "https://Personal-Projects-page.masterzy1234.repl.co" class = "dropdownbox" onclick = "return ConfirmationRedirectPersonalProjects()">Personal Projects</a>
+            </div>
+          </div> 
+          <div id = "sectionFlexItem6"> 
+            <a href = "https://Contact-Card.masterzy1234.repl.co#LinkedIn" onclick = "return ConfirmationRedirectLinkedInProfile()"><img src = "https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png" alt = "LinkedIn Profile"></a> 
+            <a href = "https://Contact-Card.masterzy1234.repl.co#IG" onclick = "return ConfirmationRedirectIGProfile()"><img src = "https://cdn.icon-icons.com/icons2/2428/PNG/512/instagram_black_logo_icon_147122.png" alt = "IG Profile"></a> 
+            <a href = "https://Contact-Card.masterzy1234.repl.co" onclick = "return ConfirmationRedirectContactPage()"><img src = "https://cdn.icon-icons.com/icons2/2428/PNG/512/whatsapp_black_logo_icon_147050.png" alt = "WA"></a>
+          </div> 
+        </div>
+      </aside> 
+      <article> 
+        <!--Insert content overhere-->  
+        <h2 class = "centralise"><u>What are 'Personal Achievements'?</u></h2>
+        <div class = "resize"> 
+          Personal Achievements refers to any achievements that can be done individually or within a group. An achievements that was attained due to full/partial participation by myself, regardless of who initiated it, are considered to be my 'Personal Achievements'. 
+          <hr> 
+          <br>
+          <br>
+          The developer of this website, by the name of Li Zhe Yun, would also like to express his words of gratitude to anyone who has made these achievements possible. 
+          <br>
+          <br>
+          Now let's look at some of them, shall we?
+          <br> 
+          <br>
+          We will first take a look at the achievements that I have attained while I was in Primary School, followed by the achievements that I have attained while attending Secondary School. Please stay tuned for my achievements obtained in tertiary education. 
+        </div> 
+        <br>
+        <br>
+        <div id = "Marker1"></div> 
+        <h3 style = "display: flex; flex-direction: row; justify-content: center"><u>Primary School Achievements</u></h3>
+        <div class = "flexContainerForImageRow1">
+          <div class = "ContainerForImageNumberIndicator"> 
+            <img src = "https://static.wixstatic.com/media/3e6e93_d8e32300b56e42b7a8709bb6246e0926~mv2.jpg" style = "cursor: default" id = "ImageNumberIndicatorImage1" alt = "Number 1"> 
+            <div class = "Layer1">
+              <div class = "ImageContainer">  
+                <img src = "https://static.wixstatic.com/media/3e6e93_9643263b555849b58e921853784014e0~mv2.jpg" alt = "Grade 2 Violin Examination" class = "ImageFormatting" style = "cursor: default">
+              </div>
+              <div class = "TextContainer">
+                <div class = "Base">
+                  <div class = "Top"> 
+                    <h3> Successfully completed Grade 2 Violin Examination with a merit in the Year 2012.</h3> 
+                  </div>
+                </div>
+                <div id = "Status">
+                  Enlarge Image is not available on the mobile version of the webpage
+                </div> 
+                <button id = "enlarge" onload = "DisableEnlargeImage()"> Enlarge image </button> 
+              </div> 
+            </div>
+          </div>
+          <hr>
+          <div class = "ContainerForImageNumberIndicator"> 
+            <img src = "https://static.wixstatic.com/media/3e6e93_f3f8606755c04aa48ab8127bfdb0f91e~mv2.jpg" style = "cursor: default" id = "ImageNumberIndicatorImage2" alt = "Number 2">
+            <div class = "Layer1"> 
+              <div class = "ImageContainer">
+                <img src = "https://static.wixstatic.com/media/3e6e93_24ce50d7ce644c8c9475a8ccfc0a47cd~mv2.jpg" alt = "Grade 5 Violin Examination" class = "ImageFormatting" style = "cursor: default"> 
+              </div>
+              <div class = "TextContainer">
+                <div class = "Base"> 
+                  <div class = "Top"> 
+                    <h3>Successfully completed Grade 5 Violin Examination with a merit in the Year 2013.</h3>
+                  </div>
+                </div>
+                <div id = "Status1">
+                  Enlarge Image is not available on the mobile version of the webpage
+                </div> 
+                <button id = "enlarge1" onload = "DisableEnlargeImage()"> Enlarge image </button> 
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class = "ContainerForImageNumberIndicator"> 
+            <img src = "https://static.wixstatic.com/media/3e6e93_3ff0e2522a044174883cda4879df9e66~mv2.jpg" style = "cursor: default" id = "ImageNumberIndicatorImage3" alt = "Number 3">
+            <div class = "Layer1">
+              <div class = "ImageContainer">
+                <img src = "https://static.wixstatic.com/media/3e6e93_156d087d4141461cb10d2aab0ca4f926~mv2.jpg" alt = "400m Swimming Award" class = "ImageFormatting" style = "cursor: default">
+              </div>
+              <div class = "TextContainer">
+                <div class = "Base">
+                  <div class = 'Top'>
+                    <h3>Successfully completed 400m (200m breaststroke+ 200m freestyle) examination in the year 2013..</h3>
+                </div>
+              </div>
+              <div id = "Status2">
+                Enlarge Image is not available on the mobile version of the webpage
+              </div> 
+              <button id = "enlarge2" onload = "DisableEnlargeImage()"> Enlarge image </button> 
+            </div>
+          </div>
+          <div class = "ContainerForImageNumberIndicator"> 
+            <img src = "https://static.wixstatic.com/media/3e6e93_51f6ad46b8024ec7b584d384a4c17720~mv2.jpg" style = "cursor: default" id = "ImageNumberIndicatorImage4" alt = "Number 4">
+            <div class = "Layer1">
+              <div class = "ImageContainer">
+                <img src = "https://static.wixstatic.com/media/3e6e93_f6d5827eee7c4ec1bb7e0855ff24573e~mv2.jpg" alt = "Our People Our Music 2014" class = "ImageFormatting" style = "cursor: default">
+              </div>
+              <div class = "TextContainer">
+                <div class = "Base">
+                  <div class = 'Top'>
+                    <h3>Participated in "Our People, Our Music" event organised by SCO  in 2014.</h3>
+                  </div>
+                </div>
+                <div id = "Status3">
+                  Enlarge Image is not available on the mobile version of the webpage
+                </div> 
+                <button id = "enlarge3" onload = "DisableEnlargeImage()"> Enlarge image </button> 
+              </div>
+            </div>
+          </div> 
+        </div> 
+        </div> 
+        <!--Display enlarged image--> 
+        <br>
+        <h2 class = "centralise">Quick sum up</h2> 
+        <div style = "background-color: lightgray" class = "SumUpBox">
+        Quick sum up of some of my major milestone in Primary School
+          <ol style = "list-style-type: bullet-point; line-height: 3.5;"> 
+            <li> Grade 2 Violin Examination (merit)</li>
+            <li style = "line-height: 1.5; list-style-type: square; background-color: yellow; border-radius: 5px;">
+            <strong> What were some of my thoughts and feelings after getting certificate? Well, if you were to ask me one day, I would say, hmm.. contented? Because this certificate is like a little milestone in my life. I still remember those days whereby I was constantly going off-beat and had to rely on my very own metronome to help prevent me from going off-beat. It was a real challenge back then! But I still managed to overcome any difficulties, and passed my Grade 2 Violin Examination with a merit.</strong> 
+            </li> 
+            <li> Grade 5 Violin Examination (merit)</li> 
+            <li style = "line-height: 1.5; list-style-type: square; background-color: yellow; border-radius: 5px;">
+            <strong>Grade 5 Violin Examination was the next music examination that I took after my Grade 2 Violin Examination in the year 2012. The song pieces that I had to play during my Examination was significantly harder as compared the exam pieces that I had played during my Grade 2 Violin Examination all the way back in the year 2012.</strong> 
+            <li> Completed 400m swimming Examination</li> 
+            <li style = "line-height: 1.5; list-style-type: square; background-color: yellow; border-radius: 5px;">
+            <strong>I would say it was a rather interesting experience for me, though it was quite tiring having to spend long hours at the pool preparing for the upcoming swimming examination. But yeah, I still made it in the end. I have managed to pass a 200m swimming examination earlier on, but I am not going to put it up in the webpage this time round.</strong> 
+            </li> 
+            <li> Participated in Our People Our Music organised by Singapore Chinese Orchestra in 2014</li>
+            <li style = "line-height: 1.5; list-style-type: square; background-color: yellow; border-radius: 5px;">
+            <strong>I still remembered that I was really struggling at playing the erhu,reading numbers on a score was rather a challenge for me, due to fact that I was lacking knowledge in terms of what do these numbers mean on the score, and what notes should I play on my instrument upon seeing that number. But, but, with time and effort, I managed to master a song required to be played at the 2014 Our People Our Music event, though I cannot remember what that song that we need to play was, but I was nominated by one of my teachers for being outstanding, mastering the song within the shortest time possible.</strong> 
+            </li> 
+          </ol> 
+          <div class = "SumUpBox" style = "background-color: lightblue"><h5>Fun Fact: I actually broke 2 Guiness World Records together with the other performers of having the largest drum assemble and largest number of Chinese Orchestra Performers. (If you look closely at the certificate)</h5></div>
+          <h3 style = "display: flex; flex-direction: row; justify-content: center;">Moving on to the achievements that I have attained in Secondary School..</h3>
+        </div> 
+        <br> 
+        <br> 
+        <br> 
+        <div id = "Marker2"></div> 
+        <h3 style = "display: flex; flex-direction: row; justify-content: center;"><u>Secondary School Achievements</u></h3>
+        <div class = "flexContainerForImageRow1">
+          <div class = "ContainerForImageNumberIndicator"> 
+            <img src = "https://static.wixstatic.com/media/3e6e93_8a15652719e94ec2a7002c8d6a78b7a9~mv2.jpg" style = "cursor: default" id = "ImageNumberIndicatorImage5" alt = "Number 5">
+            <div class = "Layer1"> 
+              <div class = "ImageContainer"> 
+                <img src = "https://static.wixstatic.com/media/3e6e93_9dd02a22b8f240e0977120eec9176a40~mv2.jpg" alt = "Grade 8 Violin Examination" class = "ImageFormatting" style = "cursor: default"> 
+              </div> 
+              <div class = "TextContainer"> 
+                <div class = "Base">
+                  <div class = "Top">
+                    <h3>Successfully cleared Grade 8 Violin Examination in the Year 2018. </h3>
+                  </div>
+                </div>
+                <div id = "Status4">
+                  Enlarge Image is not available on the mobile version of the webpage
+                </div> 
+                <button id = "enlarge4" onload = "DisableEnlargeImage()"> Enlarge image </button> 
+              </div>
+            </div>
+          </div>
+          <div class = "ContainerForImageNumberIndicator"> 
+            <img src = "https://static.wixstatic.com/media/3e6e93_19e3f9a2fc7441cfad9c58487ca3dc21~mv2.jpg" style = "cursor: default" id = "ImageNumberIndicatorImage6" alt = "Number 6">
+            <div class = "Layer1"> 
+              <div class = "ImageContainer"> 
+                <img src = "https://static.wixstatic.com/media/3e6e93_a31a9ccd581747e2a7b8036e6cac4bc1~mv2.jpg" class = "ImageFormatting" style = "cursor: default" alt = "International Biomedical Quiz 2020 Merit Award">
+              </div> 
+              <div class = "TextContainer"> 
+                <div class = "Base">
+                  <div class = "Top">
+                    <h3>Participated in the International Biomedical Quiz and attained Merit award in 2020.
+                    </h3>
+                  </div>
+                </div>
+                <div id = "Status5">
+                  Enlarge Image is not available on the mobile version of the webpage
+                </div> 
+                <button id = "enlarge5" onload = "DisableEnlargeImage()"> Enlarge image </button> 
+              </div>
+            </div>
+          </div> 
+        </div> 
+        <br> 
+        <br> 
+        <h2 id = "centralise">Quick sum up</h2>
+        <div class = "SumUpBox" style = "background-color: lightgray"> 
+          Quick sum up of some of my major milestone in Secondary School 
+          <ul style = "line-height: 3.5"> 
+            <li>Grade 8 Violin Examination (merit) in the year 2018.</li>
+            <li style = "line-height: 1.5; list-style-type: square; background-color: yellow; border-radius: 5px;">
+            <strong>Being able to successfully pass the highest grade in the violin examination is certainly something that could be commendable. </strong> 
+            </li> 
+            <li>International Biomedical Quiz organised by ACJC in 2020. Attained merit award. </li> 
+            <li style = "line-height: 1.5; list-style-type: square; background-color: yellow; border-radius: 5px;">
+            <strong>This competition has taught me to never underestimate the powers of science. Even though we were only taught certain topics in biology (examinable topics), but these were just like the tip of an iceberg. There is just so much more topics in the field of biology that we have yet to touch on. Some topics sound really alien to me.</strong> 
+            </li> 
+          </ul> 
+           <div style = "background-color: lightblue"><h5>Grade 8 is actually the highest grade that you can attain. And yes I cleared it ^_^.</h5></div>
+        </div> 
+        <br>
+        <br> 
+        <br> 
+      <section> 
+        <form action = "welcome.php" method = "post">
+          <h3> Stay Connected With Me Today! </h3> 
+          <label>Your Email Address: </label> 
+          <input type = "email" placeholder = "Please enter your email here" required = "required" name = "EmailAddr">
+          <br> 
+          <br> 
+          <label>Your Country Code: </label>
+          <select name = "Country Code">  
+            <option> +1 </option> 
+            <option> +27 </option> 
+            <option> +44 </option> 
+            <option> +60 </option> 
+            <option> +62 </option> 
+            <option> +65 </option> 
+            <option> +66 </option> 
+            <option> +86 </option> 
+            <option> +852 </option> 
+            <option> +853 </option> 
+          </select> 
+          <br>
+          <br>  
+          <label>Your local telephone number: </label> 
+          <input type = "tel" placeholder = "Your full telephone number here" required = "required" name = "TelNo"> 
+          <br> 
+          <button class = "submit"  type = "Submit" onclick = "return ConfirmationSubmit()">Submit Now!</button> 
+          <button id = "reset" type = "reset" onclick = "return ConfirmationReset()">Reset</button>
+          <br> 
+          <hr>
+          <h3 class = "textReduction"> Or you can connect with me using one of the following methods: </h3>
+          <div style = "display: flex; flex-direction: row; justify-content: center;"> 
+            <a href = "https://Contact-Card.masterzy1234.repl.co#LinkedIn" onclick = "return ConfirmRedirectLinkedInProfile()"><img src = "https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png" alt = "LinkedIn Profile"></a>
+            <a href = "https://Contact-Card.masterzy1234.repl.co#IG" onclick = "return ConfirmRedirectIGProfile()"><img src = "https://cdn.icon-icons.com/icons2/2428/PNG/512/instagram_black_logo_icon_147122.png" alt = "IG Profile"></a>
+            <a href = "https://Contact-Card.masterzy1234.repl.co" onclick = "return ConfirmRedirectContactPage()"><img src = "https://cdn.icon-icons.com/icons2/2428/PNG/512/whatsapp_black_logo_icon_147050.png" alt = "WA"></a> 
+          </div> 
+        </form> 
+        CSS VALIDATION 
+        <p>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!" />
+            </a>
+        </p>
+    </section>  
+    <footer> 
+        <p> 2021 All rights reserved </p>
+        <p> v.1.7 </p>  
+    </footer> 
+    </article> 
+    </main>
+    <div id = "ShowImage">
+      Use up or down keys to scroll up/down OR if you have a touch screen laptop, you can just swipe up/down to scroll up/down
+      <div id = "closeImage">
+        <button type = "button" class = "closeImageStyling"> CLOSE IMAGE </button> 
+      </div> 
+      <div style = "display: flex; flex-direction: row; justify-content: center">
+        <img src = "https://static.wixstatic.com/media/3e6e93_9643263b555849b58e921853784014e0~mv2.jpg" class = "ImageFormatting" style = "cursor: default" alt = "Grade 2 Violin Examination">
+      </div> 
+    </div> 
+      <!--First image displayed--> 
+      <!--Display second image --> 
+    <div id = "ShowImage1">
+      <div id = "closeImage1">
+        <button type = "button" class = "closeImageStyling"> CLOSE IMAGE </button> 
+      </div> 
+      <div style = "display: flex; flex-direction: row; justify-content: center;">
+        <img src = "https://static.wixstatic.com/media/3e6e93_24ce50d7ce644c8c9475a8ccfc0a47cd~mv2.jpg" class = "ImageFormatting" style = "cursor: default" alt = "Grade 5 Violin Examination certificate">
+      </div> 
+    </div> 
+    <!--End of the second image --> 
+    <!--Display the third image --> 
+    <div id = "ShowImage2"> 
+      <div id = "closeImage2"> 
+        <button type = "button" class = "closeImageStyling"> CLOSE IMAGE </button> 
+      </div> 
+      <div style = "display: flex; flex-direction: row; justify-content: center">
+        <img src = "https://static.wixstatic.com/media/3e6e93_156d087d4141461cb10d2aab0ca4f926~mv2.jpg" class = "ImageFormatting" style = "cursor: default" alt = "400m Swimming Examination">
+      </div>
+    </div>
+      <div id = "ShowImage3"> 
+      <div id = "closeImage3"> 
+        <button type = "button" class = "closeImageStyling"> CLOSE IMAGE </button> 
+      </div> 
+      <div style = "display: flex; flex-direction: row; justify-content: center"> 
+        <img src = "https://static.wixstatic.com/media/3e6e93_f6d5827eee7c4ec1bb7e0855ff24573e~mv2.jpg" class = "ImageFormatting" style = "cursor: default" alt = "2014 Our People Our Music event organised by Singapore Chinese Orchestra">
+      </div>
+    </div>
+    <div id = "ShowImage4"> 
+      <div id = "closeImage4">
+        <button type = "button" class = "closeImageStyling"> CLOSE IMAGE </button>
+      </div>
+      <div style = "display: flex; flex-direction: row; justify-content: center"> 
+        <img src = "https://static.wixstatic.com/media/3e6e93_9dd02a22b8f240e0977120eec9176a40~mv2.jpg" class = "ImageFormatting" style = "cursor: default" alt = "Grade 8 Violin Examination">
+      </div> 
+    </div>
+    <div id = "ShowImage5"> 
+      <div id = "closeImage5">
+        <button type = "button" class = "closeImageStyling"> CLOSE IMAGE </button>
+      </div>
+      <div style = "display: flex; flex-direction: row; justify-content: center"> 
+        <img src = "https://static.wixstatic.com/media/3e6e93_9dd02a22b8f240e0977120eec9176a40~mv2.jpg" class = "ImageFormatting" style = "cursor: default" alt = "International Biomedical Quiz 2020 Merit Award">
+      </div> 
+    </div>
+    
+    <script src = "PersonalAchievements.js"></script>
+    <noscript>This webpage cannot be displayed. Please upgrade to the latest version of your browser.</noscript> 
+  </body> 
+</html> 
+<!--END--> 

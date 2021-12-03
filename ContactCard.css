@@ -1,0 +1,738 @@
+body {
+font-family: Varela Round, sans-serif;
+display: flex; 
+flex-direction: column; 
+}
+
+h2#Marker1, h2#Marker2, h2#Marker3 {
+text-decoration: underline; 
+text-align: center; 
+}
+
+ul {
+list-style-type: none; 
+}
+
+a {
+text-decoration: none; 
+color: green; 
+cursor: pointer; 
+display: block;
+}
+
+a:hover {
+color: black; 
+}
+
+a.dropdownbox:hover {
+background-color: lightblue; 
+}
+
+a.dropdownbox1:hover {
+background-color: lightblue; 
+height: 35px; 
+}
+
+header {
+display: flex; 
+flex-direction: row; 
+background-color: lightgreen; 
+justify-content: center; 
+animation-name: gradualOpening;
+height: 100px; 
+/*Can be fixed by defining a height for the header*/ 
+}
+
+#SmallNavBar {
+background-color: lightgray; 
+display: flex; 
+flex-direction: row;  
+justify-content: center; 
+}
+
+img {
+width: 30px; 
+height: 30px; 
+margin-left: 5px;
+}
+
+img.ProfilePicture {
+width: 400px; 
+height: 400px; 
+border-radius: 60px; 
+}
+
+img.ProfilePicture:hover {
+cursor: default; 
+}
+
+figcaption {
+font-size: 20px; 
+text-align: center;
+}
+
+img:hover {
+cursor: pointer; 
+}
+
+.MyDiv { 
+font-size: 15px; 
+width: 150px; 
+background-color: lightgreen; 
+color: white; 
+font-weight: bold;
+transition: background-color 1s, color 1s;  
+}
+
+.MyDiv:hover{
+background-color: white;
+}
+
+main {
+background-color: white; 
+display: flex; 
+height: 530px; 
+flex-direction: row; 
+justify-content: space-between; 
+}
+
+/*aside#left {
+background-color: white; 
+flex: 0; 
+}
+*/
+
+#Container {
+display: none; 
+flex-direction: column; 
+position: fixed; 
+width: 20%; 
+height: 30%;
+background-image: linear-gradient(180deg, white, navy, white); 
+border-radius: 5px; 
+border-style: solid;
+border-width: 1px;
+}
+
+article { 
+background-color: mintcream;
+height: 2800px;
+margin-left: 10px; 
+flex: 5; 
+display: flex; 
+flex-direction: column; 
+}
+
+/*Create another con*/
+section {
+background-color: lightgray; 
+display: flex; 
+flex-direction: column;
+text-align: center;  
+}
+
+.sectionContainer1 {
+background-color: lightgray; 
+display: flex; 
+flex-direction: row; 
+align-items: flex-start; 
+}
+
+#sectionFlexItem1 {
+background-color: antiquewhite;
+height: 40px; 
+width: 100%; 
+border-style: solid; 
+border-width: 1px; 
+border-radius: 5px; 
+transition: background-color 1s, border-bottom-color 1s, border-bottom-width 1s;
+font-size: 15px; 
+}
+
+#sectionFlexItem1:hover{
+background-color: white;
+text-align: center;  
+border-bottom-color: turquoise; 
+border-bottom-width: 4px;
+}
+
+#sectionFlexItem2 {
+background-color: lightblue;
+width: 100% ;
+height: 40px;
+border-style: solid; 
+border-width: 1px; 
+border-radius: 5px;  
+font-size: 15px; 
+transition: background-color 1s,border-bottom-color 1s, border-bottom-width 1s;  
+}
+
+#sectionFlexItem2:hover {
+background-color: white; 
+text-align: center; 
+border-bottom-color: red; 
+border-bottom-width: 4px;
+}
+
+#sectionFlexItem3 {
+background-color: yellow;
+width: 100%;
+height: 40px;   
+border-style: solid; 
+border-width: 1px; 
+border-radius: 5px; 
+border-bottom-color: transparent; 
+font-size: 15px; 
+transition: background-color 1s, border-bottom-color 1s, border-bottom-width 1s; 
+}
+
+#sectionFlexItem3:hover {
+background-color: white; 
+text-align: center; 
+border-bottom-color: blue; 
+border-bottom-width: 4px; 
+}
+
+#sectionFlexItem4 {
+background-color: orange;
+width: 100%;  
+height: 40px; 
+border-style: solid; 
+border-width: 1px; 
+border-radius: 5px; 
+font-size: 15px; 
+transition: background-color 1s, border-bottom-color 1s, border-bottom-width 1s; 
+}
+
+#sectionFlexItem4:hover {
+background-color: white; 
+text-align: center; 
+border-bottom-color: aqua; 
+border-bottom-width: 4px; 
+}
+
+#sectionFlexItem5 {
+background-color: bisque;
+width: 100%;  
+height: 40px; 
+border-style: solid; 
+border-width: 1px; 
+border-radius: 5px; 
+font-size: 15px; 
+transition: background-color 1s, border-bottom-color 1s, border-bottom-width 1s; 
+}
+
+#sectionFlexItem5:hover {
+background-color: white; 
+text-align: center; 
+border-bottom-color: violet; 
+border-bottom-width: 4px; 
+}
+
+#sectionFlexItem6 {
+background-color: ghostwhite;
+width: 100%;  
+height: 40px; 
+border-style: solid; 
+border-width: 1px; 
+border-radius: 5px; 
+font-size: 15px; 
+transition: background-color 1s, border-bottom-color 1s, border-bottom-width 1s; 
+display: flex;
+flex-direction: row;
+/*Insert icons*/ 
+}
+
+#DropDownBoxAside {
+box-shadow: 1px 1px black; 
+background-color: white; 
+border-style: solid; 
+border-width: 1px; 
+border-top-width: 4px; 
+border-top-color: blue; 
+width: 300px; 
+display: none;  
+border-radius: 5px; 
+position: relative; 
+left: 110px; 
+z-index: 1; 
+}
+
+#DropDownBoxAsideHomepage {
+box-shadow: 1px 1px black; 
+border-style: solid; 
+background-color: white;
+border-width: 1px; 
+border-top-width: 4px; 
+border-top-color: orange; 
+width: 300px; 
+display: none; 
+position: relative;
+border-radius: 5px; 
+left: 110px; 
+z-index: 1; 
+}
+
+#DropDownBoxAsideLearningJourney {
+box-shadow: 1px 1px black; 
+border-style: solid; 
+background-color: white;
+border-width: 1px; 
+border-top-width: 4px; 
+border-top-color: red; 
+width: 300px; 
+display: none; 
+position: relative;
+border-radius: 5px; 
+left: 110px; 
+z-index: 1; 
+}
+
+#DropDownBoxAsidePersonalAchievements {
+box-shadow: 1px 1px black; 
+border-style: solid; 
+background-color: white;
+border-width: 1px; 
+border-top-width: 4px; 
+border-top-color: lightblue; 
+width: 300px; 
+display: none; 
+position: relative;
+border-radius: 5px; 
+left: 110px; 
+bottom: 15px; 
+z-index: 1;
+}
+
+/*collapsible*/ 
+#MainNavBarHomepageHome, #MainNavBarHomepageAboutMe, #MainNavBarHomepageLearningJourney, #MainNavBarHomepagePersonalAchievements{
+border-style: solid; 
+background-color: white;
+border-width: 1px;
+border-color: black;
+width: 150px; 
+display: none; 
+border-radius: 5px; 
+text-align: center; 
+}
+
+#MainNavBarOverlay, #MainNavBarOverlay1, #MainNavBarOverlay2, #MainNavBarOverlay3 {
+background-color: white; 
+width: 100%; 
+display: none; 
+text-align: center;
+}
+
+.dropdownMethodHeaderNav {
+display: block; 
+position: relative; 
+}
+/*
+#dropdownMethod:hover #MainNavBarOverlay{
+display: block; 
+}
+*/
+
+
+/*HEADER*/ 
+.dropdownMethodHeaderNav:hover #MainNavBarHomepageHome {
+display: block; 
+}
+
+.dropdownMethodHeaderNav:hover #MainNavBarHomepageAboutMe {
+display: block; 
+}
+
+.dropdownMethodHeaderNav:hover #MainNavBarHomepageLearningJourney {
+display: block; 
+}
+
+.dropdownMethodHeaderNav:hover #MainNavBarHomepagePersonalAchievements {
+display: block; 
+}
+
+/*ASIDE*/ 
+.dropdownMethod:hover #DropDownBoxAside {
+display: block; 
+}
+
+.dropdownMethod:hover #DropDownBoxAsideHomepage {
+display: block; 
+}
+
+.dropdownMethod:hover #DropDownBoxAsideLearningJourney  {
+display: block; 
+}
+
+.dropdownMethod:hover #DropDownBoxAsidePersonalAchievements{
+display: block; 
+}
+
+
+/*Centralising containers align stuff (OVERLAY MENU)*/
+.buttonContainer{
+display: flex;
+justify-content: center;
+flex-direction: row;
+}
+/*===================================================================*/
+
+footer {
+background-color: black; 
+color: white;
+text-align: center; 
+}
+
+form {
+background-color: white; 
+}
+
+input[type = email]{
+font-size: 12px; 
+width: 50%; 
+border-radius: 4px; 
+margin-bottom: 5px; 
+transition: border-color 1s, background-color 1s;
+height: 20px;
+}
+
+input[type = email]:hover {
+border-color: red; 
+background-color: yellow; 
+}
+
+input[type = tel]{
+font-size: 12px; 
+width: 50%; 
+border-radius: 4px; 
+margin-bottom: 5px; 
+transition: border-color 1s, background-color 1s;
+height: 20px;
+}
+
+input[type = tel]:hover {
+border-color: red; 
+background-color: yellow; 
+}
+
+select {
+border-radius: 2px; 
+margin-bottom: 5px; 
+width: 50%; 
+}
+
+select:hover {
+border-color: red; 
+background-color: yellow; 
+}
+
+button.menu {
+display: none; 
+}
+
+button.menu:hover {
+background-color: black;
+color: white;
+cursor: pointer; 
+}
+
+button.submit{
+border-style: solid;
+background-color: white; 
+border-radius: 4px; 
+transition: background-color 1s, color 1s;  
+}
+
+button.submit:hover {
+background-color: green; 
+color: white; 
+cursor: pointer; 
+}
+
+#reset{
+border-style: solid;
+width: 110px; 
+background-color: white; 
+border-radius: 4px; 
+transition: background-color 1s, color 1s;  
+}
+
+#reset:hover {
+background-color: red; 
+color: white; 
+cursor: pointer; 
+}
+
+.MyVisionContainer {
+display: flex; 
+flex-direction: row; 
+}
+
+#imageFormat {
+width: 60%; 
+height: 370px; 
+}
+
+#overlayMenu {
+height: 100%;
+width: 100%; 
+background-color: black; 
+position: fixed; 
+opacity: 0.95; 
+z-index: 1; 
+display: none; 
+}
+
+/*Create a scrollable overlay menu when the phone is landscape */ 
+@media (orientation: landscape){
+#overlayMenu{
+overflow-y: scroll;
+}
+}
+
+a.overlayMenu {
+margin-top: 30px; 
+font-size: 18px; 
+text-align: center; 
+font-weight: bold; 
+}
+
+a.overlayMenu:hover {
+background-color: white; 
+}
+
+#background {
+background-image: linear-gradient(45deg, red, orange, yellow, green, blue); 
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center; 
+height: 500px;
+}
+
+#textContainer {
+background-color: mintcream;
+width: 60%;
+border-style: solid;
+border-width: 1px;
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: auto;
+box-shadow: 1px 1px #000000;
+padding: 5%;
+}
+
+table, td, tr, th {
+border-style: solid;
+border-width: 1px;
+font-size: 30px;
+}
+
+#LinkedIn {
+display: flex;
+flex-direction: column; 
+font-size: 20px;
+background-image: linear-gradient(180deg, mintcream , lightgray 40%);
+}
+
+#IG {
+background-image: linear-gradient(180deg, lightgray, lightblue )
+}
+
+.ImageFormatting{
+height: auto;
+width: 100%;
+margin: auto; 
+}
+
+#description {
+background-color: lightgray;
+}
+
+#description1 {
+background-color: lightblue;
+}
+
+#modification {
+  width: 35%;
+  height: 35%;
+}
+
+@media (max-width: 400px){
+
+#InterestingFactsAboutMeFacts{
+text-align: left;
+margin-top: 10px; 
+}
+
+#InterestingFactsAboutMe {
+margin-top: 10px; 
+}
+}
+
+@media (max-width: 800px){
+#LinkedIn {
+font-size: 10px;
+}
+
+table, th, td, tr {
+font-size: 15px;
+}
+
+#background {
+height: 700px;
+}
+}
+
+@media (max-width: 1100px){
+#AboutMeInnerText {
+background-image: linear-gradient(180deg, white, turquoise);
+height: 100px;
+font-size: 15px;
+}
+
+/*Make sure that the QR Code image does not appear distorted despite increasing its height and width due to decreasing viewport width.*/ 
+#modification {
+  width: 70%;
+  height: 70%; 
+}
+
+#AboutMeInnerContainer {
+height: 100px;
+font-size: 15px;
+}
+
+#Shift {
+margin-top: 20px;
+text-align: center;
+}
+
+#imageFormat{
+width: 100%
+}
+
+#InterestingFactsAboutMeFacts {
+font-size: 15px; 
+}
+
+img.ProfilePicture{
+width: 150px; 
+height: 150px; 
+border-radius: 4px; 
+}
+
+img#InterestingFactsAboutMe {
+width: 100%; 
+border-radius: 5px; 
+}
+
+header {
+display: none; 
+}
+
+main {
+margin-top: 15px; 
+margin-left: 0px;
+}
+
+aside {
+display: none; 
+}
+
+#MyDiv {
+width: 100%;
+}
+
+button.menu {
+display: block; 
+border-radius: 5px;
+background-color: lightgray; 
+transition: background-color 1s, color 1s;
+}
+
+#SmallNavBar {
+position: fixed; 
+box-shadow: 0px 2px black; 
+background-color: white; 
+justify-content: space-between; 
+width: 100%;
+z-index: 9999;
+} 
+
+input[type = email]{
+width: 50%;
+}
+
+img.ProfilePicture {
+width: 200px; 
+height: 200px; 
+}
+
+#AboutMe1, #AboutMe2, #AboutMe3, #AboutMe4 {
+text-align: center;
+margin-top: 10px; 
+height: 150px; 
+width: 100% 
+}
+
+#AboutMe1, #AboutMe2, #AboutMe3, #AboutMe4 {
+flex-direction: column; 
+}
+
+input[type = email], input[type=tel]{
+width: 10%; 
+font-size: 10px; 
+height: 15px; 
+}
+
+select {
+width: 10%; 
+font-size: 10px;
+height: 15px; 
+}
+
+}
+
+#AboutMeInnerText, #AboutMeInnerContainer {
+width: 100%; 
+}
+
+article {
+height: 1000px;
+}
+
+#sectionFlexItem1, #sectionFlexItem2, #sectionFlexItem3, #sectionFlexItem4,#sectionFlexItem5 {
+font-size: 12px; 
+}
+
+article {
+flex: 6;  
+}
+
+input[type = email]{
+width: 30%; 
+}
+
+input[type = tel]{
+width: 30%; 
+}
+
+select {
+width: 30%; 
+}
+
+.textReduction{
+font-size: 15px;
+}
+
+#DropDownBoxAside, #DropDownBoxAsideHomepage, #DropDownBoxAsideLearningJourney, #DropDownBoxAsidePersonalAchievements  {
+left: 170px; 
+}
+
+#DropDownBoxAsidePersonalAchievements {
+bottom: 5px; 
+}
+
+/*Aside nav bar too narrow, need to increase the size 
