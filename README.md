@@ -61,7 +61,7 @@ This document focuses on some notable javascript functions (common and uncommon)
 6) AboutMe.css  
 7) LearningJourney.css  
 8) Personal Achievements.css  
-9) index.css (Homepage)  
+9) Homepage.css (Homepage)  
 10) PersonalProjects.css   
 11) AboutMePage.js 
 12)  PersonalAchievements.js (applies to PersonalAchievements.html)   
