@@ -63,11 +63,6 @@
       <li align = "justify"> <b> You will learn traditional JavaScript faster through jQuery.</b> </li>
         <ol>
           <li align = "justify"> Previously it took me a while to understand certain things like <code>addEventListener</code> in JavaScript. With the help of jQuery, I get to know how event listeners work javascript through the following syntax: <code>jQuery([element]#/.[id/class name].on([action], function(){ });</code>, i get to know that, if an action is performed on the target DOM element, it could be said that  </li> 
-          <br> 
-          <br> 
-          <li align = "justify"></li> 
-          <br> 
-          <br> 
         </ol>  
     </ol>
   <br>  
@@ -76,8 +71,6 @@
       <li align = "justify"> <b> 100% dependance on someone else's animation is not fun at all</b> </li> 
       <ol> 
         <li align = "justify"> I have decided not to use Lottie Files for every single part of my website which require animations. Instead I have decided to recreate my very own loading animation using CSS Keyframes</li>
-        <br> 
-        <li> </li>  
       </ol>
       <br> 
       <li align = "text"><b> I just wanted to challenge myself. </b></li> 
@@ -96,7 +89,7 @@
         <li align = "justify">Since the board game that I will be creating for my website is a multiplayer game, this would therefore mean that there is a need for matchmaking. But the question here is, how does matchmaking take place, since we will need to pull another player to the current game room over the internet, therefore we need APIs to do it.</li> 
         <br> 
         <br> 
-        <li align = "justify">
+        <li align = "justify">Displaying of global leaderboards in the main page of the website.</li> 
       </ol> 
     </ol> 
   <br> 
@@ -122,7 +115,7 @@
         <li align = "justify"> In order to ensure that my webpages are fully responsive with changing screen widths, and changing heights. </li> 
         <br>
         <br>  
-        <li align = "justify">Most importantly have a referecing blueprint, that I could look at while developing.</li> 
+        <li align = "justify">Most importantly have a referecing blueprint, that I could look at while developing, and not code blindly</li> 
         <br> 
         <br> 
       </ol> 
@@ -131,7 +124,10 @@
   <br> 
   <li> Adobe Illustrator </li> 
     <ol> 
-      <li align = "justify">Tried to stay away from using online stock images as I feel that this does not show that I am a good developer. Hence why not take this good opportunity to come up with something that nobody has come up with before. </li> 
+      <li align = "justify"><b>To create custom images for use on my webpage, for example website logos, etc.</b></li> 
+      <ol>
+        <li align = "justify">Tried to stay away from using online stock images as I feel that this does not show that I am a good developer. Hence why not take this good opportunity to come up with something that nobody has come up with before. </li> 
+      </ol> 
     </ol> 
 </ul> 
 
@@ -144,9 +140,9 @@
 <p align = "justify">
   While the developer is 100% responsible for ensuring that this website functions as intended, the developer would like to request any future users of this website to do the following testing and report any bugs to the developer via the in-game contact form. 
 </p> 
-
+<br> 
 <ol> 
-  
+  <li align = "justify">Please help to check if the contact form actually gives an alert box which tells the user whether is he/she 100% sure that he/she would like to submit his/her responses</li> 
 </ol>
 
 <br>
@@ -160,19 +156,7 @@
 </p>
 
 
-
-#### 1. normalise.css 
-
-#### 2. jQuery library 
-
-#### 3. Loading 40 | Paperplane 
-
-
-
-
-
-
-
-
-
-
+<li> normalise.css </li> 
+<li> jQuery library </li>
+<li> <a href = "https://lottiefiles.com/9844-loading-40-paperplane">Loading 40 | Paper aeroplane</a> </li> 
+<li> <a href = "https://lottiefiles.com/72785-searching">Searching</a> </li> 
