@@ -1,4 +1,10 @@
-**Last updated: 22 January 2022 10:49PM** 
+**Last updated: 19 February 2022 10:49AM** 
+<br>
+<br>
+
+<blockquote>Reported major API outage @ 18 Feb 2022 1:50AM <b> Cannot sign in/out, like/dislike, buy items</b> API unstable. If API fails, please wait patiently for the code to work, rest assured that the code actually 100% works. </blockquote>
+
+ 
 
 ## TABLE OF CONTENTS 
 <ul> 
@@ -8,6 +14,7 @@
   <li> List of bugs fixed + how does this bug impact normal functionality of the website as a whole </li> 
   <li> Technology used </li> 
   <li> Testing </li> 
+  <li> List of javascript codes that you may want to categorise them as good...? </li> 
   <li> Acknowledgements </li> 
 </ul> 
 
@@ -17,7 +24,7 @@
 
 ## Project Name 
 
-**Name: ** The boardgame of a corrupt city   
+**Name: ** TheUltimateGamingWebsite  
 (sounds weird but yea)
 
 <br> 
@@ -25,21 +32,30 @@
 <br> 
 
 ## Design Rationale
+
+<p align = "justify">Most games nowadays that we see require you to pay money to pay. In this game, no money was involved. All you have to do is to invest some time into this website to earn something that is commonly referred to as 'points'. You can use these 'points' to make life easier for you in order for you to earn more points. Make life easier by purchasing power ups, only hints for now to speed up the gaming process.</p> 
+<br>
+<br>
+<br>
 <p align = "justify">
-  Tried to create two different types of games. One game is the board game whereas the other game is the ( ) 
+  Tried to create two different types of games. One game is the sudoku whereas the other game is the minesweeper. Our focus is to make sure that both games have been re-engineered in such a way that it will attract more players to come and play it in the long run. 
 </p> 
 <br> 
 <p align = "justify"> 
   The purpose of the board game is to teach people how to make wise decisions in life. Think before doing anything. The board game consists of various traps that the player may fall into with the introduction of the all new "Mystery tiles" <b>(refer to image below)</b> 
 </p>
-
+<br> 
 <p align = "center"> 
   <img src = "https://static.wixstatic.com/media/3e6e93_0264d9da423e4225a561c0873345769f~mv2.png" width = "300px">
   <br> 
   <small><b>An example of a mystery tile</b></small> 
 </p> 
-
-
+<br> 
+<p align = "justify">
+  Another game that I have created would be the minesweeper game. The minesweeper game consists of a 420-square board. That has mines buried in each square. There are no levels of difficulty in this game. Players have only one level for now to play with. 
+</p>  
+<br> 
+<p align = "justify">The other games that we have created so far would be the "Sudoku" game and the "Minesweeper" game. I'm pretty sure that most of us here are familiar with the rules to play the minesweeper game. </p> 
 <br> 
 <hr> 
 <br> 
@@ -129,6 +145,25 @@
         <li align = "justify">Tried to stay away from using online stock images as I feel that this does not show that I am a good developer. Hence why not take this good opportunity to come up with something that nobody has come up with before. </li> 
       </ol> 
     </ol> 
+  <br>
+  <br>
+  <li>Google fonts</li> 
+    <ol>
+      <li align = "justify"><b>Don't you think the webpage looks more 'terrifying' with the Times New Roman font?</b></li>
+      <ol>
+        <li align = "justify">Applied the 'Varela Round' font to ensure that this website looks less 'threatening'. And at the same time, it makes the websites looks more modern and refined. </li> 
+      </ol>  
+      <li align = "justify"><b></b></li>
+    </ol> 
+  <br> 
+  <br> 
+  <li>Google icons</li>
+    <ol> 
+      <li align = "justify"><b>It's kind of "hard" to create these icons using CSS?</b></li> 
+      <ol> 
+        <li align = "justify">Plus using google icons is much more simpler than using CSS, just </li> 
+      </ol> 
+    </ol> 
 </ul> 
 
 <br> 
@@ -142,8 +177,68 @@
 </p> 
 <br> 
 <ol> 
-  <li align = "justify">Please help to check if the contact form actually gives an alert box which tells the user whether is he/she 100% sure that he/she would like to submit his/her responses</li> 
+  <li align = "justify">Please help to check if the contact form actually gives an alert box which tells the user whether is he/she 100% sure that he/she would like to submit his/her responses</li>
+  <br> 
+  <li align = "justify">Please help me check whether you can log into 2 dummy accounts with the same password. The usernames of the two dummy accounts are <code>ok</code> and <code>admin3</code>. The password for these 2 accounts would be <code>helloabcd</code>. Please enter the following URL into your browser search bar:  
+  <br>
+  <br>
+  <b><code>https://MainPage.masterzy1234.repl.co/LogIn.html</code></b>
+  <br>
+  <br>
+  <b>OR</b> 
+  <br>
+  <br>
+  click on this click below: 
+  <br>
+  <br>
+  <a href = "https://MainPage.masterzy1234.repl.co/LogIn.html">CLICK MEEEEEEE</a> 
+  <br>
+  <br>
+  <li align = "justify">Please help me check that you can only like and dislike if you are logged into the website. How to tell if you are logged in? Well, for that case, the 'Log In' button should no longer be seen by anyone if you are logged in. If you click on the thumbs up and down icon, as show in the following image, the following window should pop up, prompting you to log into the website first before you can start liking the game content, and showing your support for the game content creators. Once you are logged in, you can now</li> 
+  <br>
+  <br>
+  <li align = "justify">Do not attempt to run any of the pages that I have created in this repository in other browsers other than Chrome(includes Android version) & Microsoft Edge, this is because some of the word transitions would no longer be visible when you attempt to view the same page on browsers that were not mentioned here. Display of the fonts on your viewport would be extremely weird.</li>
+  <br>
+  <br>
+  <li align = "justify">Please go to the following URL -> <code>https://MainPage.masterzy1234.repl.co/gamesPage.html</code> and check if you can like / dislike the game. It has been programmed in such a way that each user are only allowed to like or dislike the game once. However, you have the ability of removing the like or dislike from the game, if you change your mind. <b> You will need to be logged into the website in order to use this feature. (A pop-up message will appear indicating that you will need to be signed into the website in order to use the like and dislike features). </b> Once you have like or dislike the game. Refresh the page, and see if you can still remove the like or dislike from the game. You can see the green thumbs up for liked games and red thumbs down for disliked games even after you refresh the page.</li>
+  <br> 
+  <br> 
+  <li align = "justify">Please help to check that the spinning wheel actually stops on its own after a set period of time. Please do take note what is the score that is displayed in the message. For example, if the black coloured triangle. For example, if the black coloured triangle is pointing at the 20 points, you should only be awarded with 20 points. </li>
+  <br>
+  <br>  
+  <li align = "justify">minesweeperFunctionality.js is an extremely heavy javascript file that can be thought of as the main brainpower to the minesweeper. Modifying any part of the code could result in the website suffering from chronic brain damage and will never function again! Please check if the code works in your broswer. Please feedback to the development team if you encounter any serious lags. </li> 
+  <br>
+  <br> 
+  <li align = "justify">Please ensure that you have successfully </li> 
+  <br> 
+  <br> 
+  <li align = "justify"></li>
+  <br>
+  <br>
 </ol>
+
+#### Some interesting bugs found would include: 
+<ol>
+  <li align = "justify">User not being able to sign out of his or her account after clicking on the Log out button. This problem has been fixed successfully with the v.2.0.56 update. </li> 
+  <br>
+  <br>
+  <li align = "justify">Correct password. Correct username. But the login system just won't accept it as a valid username or password. Sounds ridiculous and weird, but this problem has been successfully rectified in the v.2.0.43 update.</li>
+  <br> 
+  <br>
+  <li align = "justify">Due to slow processing speeds, and the tendency of each user clicking on the like and dislike button more than once, this bug has been successfully fixed in v.2.0.64</li> 
+  <br> 
+  <br>  
+  <li align= "justify">Tested with old computers that came with CPUs manufactured before the year 2017. Frequent lags were seen. Please do not attempt to run any of my code on computers manufactured before 2017. Browser crashes, animations not working as expected, may occur. The developer of this website shall not be held liable for any damage caused to your device, hardware and / or software. </li>
+  <br>
+  <br>
+  <li align = "justify">Opening the same website in multiple tabs? Don't worry. The data synchronisation bug has been successfully fixed with effect from 17th February 2022, v.2.0.781. You do not have to refresh the page ever single time you have made a purchase on another page. </li>
+  <br> 
+  <br> 
+  <li align = "justify">Try and see if you can purchase items in the minesweeper game. You should be able to select how many hints you would like to purchase from the store in one single go.</li> 
+  <br>
+  <br>
+  <li align = "justify">Flexboxes can be freaking weird at times..Its already been declared row but it keep giving column. Very annoying. </li>
+</ol> 
 
 <br>
 <hr>
